@@ -9,28 +9,68 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Exercise;
+  private ConceptPresentation props_ExerciseWithSubname;
+  private ConceptPresentation props_ExerciseWithTag;
+  private ConceptPresentation props_Exercises;
   private ConceptPresentation props_MoodleTest;
+  private ConceptPresentation props_MoodleTests;
+  private ConceptPresentation props_QuizUser;
+  private ConceptPresentation props_QuizUsers;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Exercise:
-        if (props_Exercise == null) {
+      case LanguageConceptSwitch.ExerciseWithSubname:
+        if (props_ExerciseWithSubname == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Exercise");
-          props_Exercise = cpb.create();
+          cpb.rawPresentation("ExerciseWithSubname");
+          props_ExerciseWithSubname = cpb.create();
         }
-        return props_Exercise;
+        return props_ExerciseWithSubname;
+      case LanguageConceptSwitch.ExerciseWithTag:
+        if (props_ExerciseWithTag == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ExerciseWithTag");
+          props_ExerciseWithTag = cpb.create();
+        }
+        return props_ExerciseWithTag;
+      case LanguageConceptSwitch.Exercises:
+        if (props_Exercises == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Exercises");
+          props_Exercises = cpb.create();
+        }
+        return props_Exercises;
       case LanguageConceptSwitch.MoodleTest:
         if (props_MoodleTest == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("MoodleTest");
           props_MoodleTest = cpb.create();
         }
         return props_MoodleTest;
+      case LanguageConceptSwitch.MoodleTests:
+        if (props_MoodleTests == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("MoodleTests");
+          props_MoodleTests = cpb.create();
+        }
+        return props_MoodleTests;
+      case LanguageConceptSwitch.QuizUser:
+        if (props_QuizUser == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("QuizUser");
+          props_QuizUser = cpb.create();
+        }
+        return props_QuizUser;
+      case LanguageConceptSwitch.QuizUsers:
+        if (props_QuizUsers == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("QuizUsers");
+          props_QuizUsers = cpb.create();
+        }
+        return props_QuizUsers;
     }
     return null;
   }

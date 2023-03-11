@@ -13,8 +13,13 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptExercise = createDescriptorForExercise();
+  /*package*/ final ConceptDescriptor myConceptExerciseWithSubname = createDescriptorForExerciseWithSubname();
+  /*package*/ final ConceptDescriptor myConceptExerciseWithTag = createDescriptorForExerciseWithTag();
+  /*package*/ final ConceptDescriptor myConceptExercises = createDescriptorForExercises();
   /*package*/ final ConceptDescriptor myConceptMoodleTest = createDescriptorForMoodleTest();
+  /*package*/ final ConceptDescriptor myConceptMoodleTests = createDescriptorForMoodleTests();
+  /*package*/ final ConceptDescriptor myConceptQuizUser = createDescriptorForQuizUser();
+  /*package*/ final ConceptDescriptor myConceptQuizUsers = createDescriptorForQuizUsers();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -29,17 +34,27 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptExercise, myConceptMoodleTest);
+    return Arrays.asList(myConceptExerciseWithSubname, myConceptExerciseWithTag, myConceptExercises, myConceptMoodleTest, myConceptMoodleTests, myConceptQuizUser, myConceptQuizUsers);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Exercise:
-        return myConceptExercise;
+      case LanguageConceptSwitch.ExerciseWithSubname:
+        return myConceptExerciseWithSubname;
+      case LanguageConceptSwitch.ExerciseWithTag:
+        return myConceptExerciseWithTag;
+      case LanguageConceptSwitch.Exercises:
+        return myConceptExercises;
       case LanguageConceptSwitch.MoodleTest:
         return myConceptMoodleTest;
+      case LanguageConceptSwitch.MoodleTests:
+        return myConceptMoodleTests;
+      case LanguageConceptSwitch.QuizUser:
+        return myConceptQuizUser;
+      case LanguageConceptSwitch.QuizUsers:
+        return myConceptQuizUsers;
       default:
         return null;
     }
@@ -50,24 +65,66 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForExercise() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "Exercise", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97718d1L);
+  private static ConceptDescriptor createDescriptorForExerciseWithSubname() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "ExerciseWithSubname", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4ff1eL);
+    b.class_(false, false, false);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2463884494659452702");
+    b.version(3);
+    b.property("count", 0x223179e4c7c50397L).type(PrimitiveTypeId.INTEGER).origin("2463884494659453847").done();
+    b.property("subname", 0x223179e4c7c504ebL).type(PrimitiveTypeId.STRING).origin("2463884494659454187").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExerciseWithTag() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "ExerciseWithTag", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4f2a6L);
+    b.class_(false, false, false);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2463884494659449510");
+    b.version(3);
+    b.property("count", 0x223179e4c7c4f934L).type(PrimitiveTypeId.INTEGER).origin("2463884494659451188").done();
+    b.property("tag", 0x223179e4c7c4fa54L).type(PrimitiveTypeId.STRING).origin("2463884494659451476").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExercises() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "Exercises", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97718d1L);
     b.class_(false, false, false);
     b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/6569387237471361233");
     b.version(3);
-    b.property("count", 0x5b2b26e2e9771ac1L).type(PrimitiveTypeId.INTEGER).origin("6569387237471361729").done();
-    b.property("subname", 0x5b2b26e2e9771f21L).type(PrimitiveTypeId.STRING).origin("6569387237471362849").done();
+    b.aggregate("ContentWithSubname", 0x223179e4c7c51481L).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4ff1eL).optional(true).ordered(true).multiple(true).origin("2463884494659458177").done();
+    b.aggregate("ContentWithTag", 0x223179e4c7cafc69L).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4f2a6L).optional(true).ordered(true).multiple(true).origin("2463884494659845225").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMoodleTest() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "MoodleTest", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97557e4L);
-    b.class_(false, false, true);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.class_(false, false, false);
     b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/6569387237471246308");
     b.version(3);
-    b.property("coursId", 0x5b2b26e2e9770cffL).type(PrimitiveTypeId.INTEGER).origin("6569387237471358207").done();
     b.property("title", 0x5b2b26e2e977679bL).type(PrimitiveTypeId.STRING).origin("6569387237471381403").done();
-    b.aggregate("content", 0x5b2b26e2e9772576L).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97718d1L).optional(true).ordered(true).multiple(true).origin("6569387237471364470").done();
+    b.aggregate("Exercises", 0x5b2b26e2e9772576L).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97718d1L).optional(false).ordered(true).multiple(false).origin("6569387237471364470").done();
+    b.aggregate("QuizUsers", 0x223179e4c7c8ed4dL).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c56a58L).optional(false).ordered(true).multiple(false).origin("2463884494659710285").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMoodleTests() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "MoodleTests", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7bf010eL);
+    b.class_(false, false, true);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2463884494659059982");
+    b.version(3);
+    b.aggregate("Content", 0x223179e4c7bf049dL).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97557e4L).optional(false).ordered(true).multiple(true).origin("2463884494659060893").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForQuizUser() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "QuizUser", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c570f9L);
+    b.class_(false, false, false);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2463884494659481849");
+    b.version(3);
+    b.property("name", 0x223179e4c7c573ecL).type(PrimitiveTypeId.STRING).origin("2463884494659482604").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForQuizUsers() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "QuizUsers", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c56a58L);
+    b.class_(false, false, false);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2463884494659480152");
+    b.version(3);
+    b.property("name", 0x223179e4c7c56d9bL).type(PrimitiveTypeId.STRING).origin("2463884494659480987").done();
+    b.aggregate("QuizUser", 0x223179e4c7c56fd9L).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c570f9L).optional(false).ordered(true).multiple(true).origin("2463884494659481561").done();
     return b.create();
   }
 }
