@@ -5,10 +5,19 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -45,6 +54,11 @@
       <property role="TrG5h" value="title" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="7IaxlwYecn4" role="1TKVEl">
+      <property role="IQ2nx" value="8902074227498730948" />
+      <property role="TrG5h" value="questionCategory" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="5GF9IbDtMlQ" role="1TKVEi">
       <property role="IQ2ns" value="6569387237471364470" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -58,6 +72,12 @@
       <property role="20kJfa" value="QuizUsers" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="28Luuj7LmDo" resolve="QuizUsers" />
+    </node>
+    <node concept="1TJgyj" id="7IaxlwYgYls" role="1TKVEi">
+      <property role="IQ2ns" value="8902074227499459932" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Settins" />
+      <ref role="20lvS9" node="7IaxlwYeVzu" resolve="Settings" />
     </node>
   </node>
   <node concept="1TIwiD" id="5GF9IbDtLzh">
@@ -99,7 +119,7 @@
     <node concept="1TJgyi" id="28Luuj7Lf$O" role="1TKVEl">
       <property role="IQ2nx" value="2463884494659451188" />
       <property role="TrG5h" value="count" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="7IaxlwYkZGt" resolve="PositiveNumber" />
     </node>
     <node concept="1TJgyi" id="28Luuj7LfDk" role="1TKVEl">
       <property role="IQ2nx" value="2463884494659451476" />
@@ -114,7 +134,7 @@
     <node concept="1TJgyi" id="28Luuj7Lgen" role="1TKVEl">
       <property role="IQ2nx" value="2463884494659453847" />
       <property role="TrG5h" value="count" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="7IaxlwYkZGt" resolve="PositiveNumber" />
     </node>
     <node concept="1TJgyi" id="28Luuj7LgjF" role="1TKVEl">
       <property role="IQ2nx" value="2463884494659454187" />
@@ -148,6 +168,75 @@
       <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7IaxlwYd28k">
+    <property role="EcuMT" value="8902074227498426900" />
+    <property role="TrG5h" value="QuestionsCategory" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="7IaxlwYdscu" role="1TKVEl">
+      <property role="IQ2nx" value="8902074227498533662" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IaxlwYeVzu">
+    <property role="EcuMT" value="8902074227498924254" />
+    <property role="TrG5h" value="Settings" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="7IaxlwYeWMs" role="1TKVEi">
+      <property role="IQ2ns" value="8902074227498929308" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Shuffle" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7IaxlwYeVQB" resolve="ShuffleSetting" />
+    </node>
+    <node concept="1TJgyj" id="7IaxlwYkbAS" role="1TKVEi">
+      <property role="IQ2ns" value="8902074227500300728" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Attempts" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7IaxlwYkaYJ" resolve="AttemptsSetting" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IaxlwYeVQB">
+    <property role="EcuMT" value="8902074227498925479" />
+    <property role="TrG5h" value="ShuffleSetting" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="7IaxlwYeVWI" role="1TKVEl">
+      <property role="IQ2nx" value="8902074227498925870" />
+      <property role="TrG5h" value="shuffle" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IaxlwYkaYJ">
+    <property role="EcuMT" value="8902074227500298159" />
+    <property role="TrG5h" value="AttemptsSetting" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="7IaxlwYkb9J" role="1TKVEl">
+      <property role="IQ2nx" value="8902074227500298863" />
+      <property role="TrG5h" value="attempts" />
+      <ref role="AX2Wp" node="7IaxlwYkUrf" resolve="AttemptsType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IaxlwYkNFP">
+    <property role="EcuMT" value="8902074227500464885" />
+    <property role="TrG5h" value="PassGrade" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="7IaxlwYkNMm" role="1TKVEl">
+      <property role="IQ2nx" value="8902074227500465302" />
+      <property role="TrG5h" value="passGrade" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="7IaxlwYkUrf">
+    <property role="3F6X1D" value="8902074227500492495" />
+    <property role="TrG5h" value="AttemptsType" />
+    <property role="FLfZY" value="^(?:[1-9]|10|unlimited)$" />
+  </node>
+  <node concept="Az7Fb" id="7IaxlwYkZGt">
+    <property role="3F6X1D" value="8902074227500514077" />
+    <property role="TrG5h" value="PositiveNumber" />
+    <property role="FLfZY" value="^[1-9][0-9]*$" />
   </node>
 </model>
 

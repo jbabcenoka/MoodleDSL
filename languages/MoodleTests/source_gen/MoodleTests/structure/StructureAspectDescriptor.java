@@ -4,22 +4,33 @@ package MoodleTests.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptor;
+import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptorImpl;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
+import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAttemptsSetting = createDescriptorForAttemptsSetting();
   /*package*/ final ConceptDescriptor myConceptExerciseWithSubname = createDescriptorForExerciseWithSubname();
   /*package*/ final ConceptDescriptor myConceptExerciseWithTag = createDescriptorForExerciseWithTag();
   /*package*/ final ConceptDescriptor myConceptExercises = createDescriptorForExercises();
   /*package*/ final ConceptDescriptor myConceptMoodleTest = createDescriptorForMoodleTest();
   /*package*/ final ConceptDescriptor myConceptMoodleTests = createDescriptorForMoodleTests();
+  /*package*/ final ConceptDescriptor myConceptPassGrade = createDescriptorForPassGrade();
+  /*package*/ final ConceptDescriptor myConceptQuestionsCategory = createDescriptorForQuestionsCategory();
   /*package*/ final ConceptDescriptor myConceptQuizUser = createDescriptorForQuizUser();
   /*package*/ final ConceptDescriptor myConceptQuizUsers = createDescriptorForQuizUsers();
+  /*package*/ final ConceptDescriptor myConceptSettings = createDescriptorForSettings();
+  /*package*/ final ConceptDescriptor myConceptShuffleSetting = createDescriptorForShuffleSetting();
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeAttemptsType = new ConstrainedStringDatatypeDescriptorImpl(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e53a6cfL, "AttemptsType", "r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/8902074227500492495", "^(?:[1-9]|10|unlimited)$");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypePositiveNumber = new ConstrainedStringDatatypeDescriptorImpl(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e53fb1dL, "PositiveNumber", "r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/8902074227500514077", "^[1-9][0-9]*$");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -34,13 +45,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptExerciseWithSubname, myConceptExerciseWithTag, myConceptExercises, myConceptMoodleTest, myConceptMoodleTests, myConceptQuizUser, myConceptQuizUsers);
+    return Arrays.asList(myConceptAttemptsSetting, myConceptExerciseWithSubname, myConceptExerciseWithTag, myConceptExercises, myConceptMoodleTest, myConceptMoodleTests, myConceptPassGrade, myConceptQuestionsCategory, myConceptQuizUser, myConceptQuizUsers, myConceptSettings, myConceptShuffleSetting);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.AttemptsSetting:
+        return myConceptAttemptsSetting;
       case LanguageConceptSwitch.ExerciseWithSubname:
         return myConceptExerciseWithSubname;
       case LanguageConceptSwitch.ExerciseWithTag:
@@ -51,26 +64,46 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMoodleTest;
       case LanguageConceptSwitch.MoodleTests:
         return myConceptMoodleTests;
+      case LanguageConceptSwitch.PassGrade:
+        return myConceptPassGrade;
+      case LanguageConceptSwitch.QuestionsCategory:
+        return myConceptQuestionsCategory;
       case LanguageConceptSwitch.QuizUser:
         return myConceptQuizUser;
       case LanguageConceptSwitch.QuizUsers:
         return myConceptQuizUsers;
+      case LanguageConceptSwitch.Settings:
+        return myConceptSettings;
+      case LanguageConceptSwitch.ShuffleSetting:
+        return myConceptShuffleSetting;
       default:
         return null;
     }
   }
 
+  @Override
+  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
+    return Arrays.asList(myCSDatatypeAttemptsType, myCSDatatypePositiveNumber);
+  }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAttemptsSetting() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "AttemptsSetting", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e50afafL);
+    b.class_(false, false, false);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/8902074227500298159");
+    b.version(3);
+    b.property("attempts", 0x7b8a85583e50b26fL).type(MetaIdFactory.dataTypeId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e53a6cfL)).origin("8902074227500298863").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForExerciseWithSubname() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "ExerciseWithSubname", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4ff1eL);
     b.class_(false, false, false);
     b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2463884494659452702");
     b.version(3);
-    b.property("count", 0x223179e4c7c50397L).type(PrimitiveTypeId.INTEGER).origin("2463884494659453847").done();
+    b.property("count", 0x223179e4c7c50397L).type(MetaIdFactory.dataTypeId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e53fb1dL)).origin("2463884494659453847").done();
     b.property("subname", 0x223179e4c7c504ebL).type(PrimitiveTypeId.STRING).origin("2463884494659454187").done();
     return b.create();
   }
@@ -79,7 +112,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2463884494659449510");
     b.version(3);
-    b.property("count", 0x223179e4c7c4f934L).type(PrimitiveTypeId.INTEGER).origin("2463884494659451188").done();
+    b.property("count", 0x223179e4c7c4f934L).type(MetaIdFactory.dataTypeId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e53fb1dL)).origin("2463884494659451188").done();
     b.property("tag", 0x223179e4c7c4fa54L).type(PrimitiveTypeId.STRING).origin("2463884494659451476").done();
     return b.create();
   }
@@ -98,8 +131,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/6569387237471246308");
     b.version(3);
     b.property("title", 0x5b2b26e2e977679bL).type(PrimitiveTypeId.STRING).origin("6569387237471381403").done();
+    b.property("questionCategory", 0x7b8a85583e38c5c4L).type(PrimitiveTypeId.STRING).origin("8902074227498730948").done();
     b.aggregate("Exercises", 0x5b2b26e2e9772576L).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97718d1L).optional(false).ordered(true).multiple(false).origin("6569387237471364470").done();
     b.aggregate("QuizUsers", 0x223179e4c7c8ed4dL).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c56a58L).optional(false).ordered(true).multiple(false).origin("2463884494659710285").done();
+    b.aggregate("Settins", 0x7b8a85583e43e55cL).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e3bb8deL).optional(true).ordered(true).multiple(false).origin("8902074227499459932").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMoodleTests() {
@@ -108,6 +143,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2463884494659059982");
     b.version(3);
     b.aggregate("Content", 0x223179e4c7bf049dL).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97557e4L).optional(false).ordered(true).multiple(true).origin("2463884494659060893").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPassGrade() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "PassGrade", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e533af5L);
+    b.class_(false, false, false);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/8902074227500464885");
+    b.version(3);
+    b.property("passGrade", 0x7b8a85583e533c96L).type(PrimitiveTypeId.STRING).origin("8902074227500465302").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForQuestionsCategory() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "QuestionsCategory", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e342214L);
+    b.class_(false, false, false);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/8902074227498426900");
+    b.version(3);
+    b.property("name", 0x7b8a85583e35c31eL).type(PrimitiveTypeId.STRING).origin("8902074227498533662").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForQuizUser() {
@@ -125,6 +176,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("name", 0x223179e4c7c56d9bL).type(PrimitiveTypeId.STRING).origin("2463884494659480987").done();
     b.aggregate("QuizUser", 0x223179e4c7c56fd9L).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c570f9L).optional(false).ordered(true).multiple(true).origin("2463884494659481561").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSettings() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "Settings", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e3bb8deL);
+    b.class_(false, false, false);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/8902074227498924254");
+    b.version(3);
+    b.aggregate("Shuffle", 0x7b8a85583e3bcc9cL).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e3bbda7L).optional(false).ordered(true).multiple(false).origin("8902074227498929308").done();
+    b.aggregate("Attempts", 0x7b8a85583e50b9b8L).target(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e50afafL).optional(false).ordered(true).multiple(false).origin("8902074227500300728").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForShuffleSetting() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("MoodleTests", "ShuffleSetting", 0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e3bbda7L);
+    b.class_(false, false, false);
+    b.origin("r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/8902074227498925479");
+    b.version(3);
+    b.property("shuffle", 0x7b8a85583e3bbf2eL).type(PrimitiveTypeId.BOOLEAN).origin("8902074227498925870").done();
     return b.create();
   }
 }

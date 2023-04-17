@@ -1,0 +1,36 @@
+<moodleTests>  
+  <moodleTest>    
+    <questionCategory>Eksamens</questionCategory>
+    <title>FirstQuiz 1 version</title>
+    <exercises>      
+      <withSubname>        
+        <count>2</count>
+        <subname>LINQ</subname>
+      </withSubname>
+      
+      <withTag>        
+        <count>2</count>
+        <tag>EF</tag>
+      </withTag>
+    </exercises>
+    
+    <quizUsers>      
+      <user>        
+        <name>jb19045</name>
+      </user>
+    </quizUsers>
+  </moodleTest>
+  <moodleTest>    
+    <questionCategory></questionCategory>
+    <title></title>
+    <exercises>      
+      
+    </exercises>
+    
+    <quizUsers>      
+      <user>        
+        <name></name>
+      </user>
+    </quizUsers>
+  </moodleTest>
+</moodleTests>

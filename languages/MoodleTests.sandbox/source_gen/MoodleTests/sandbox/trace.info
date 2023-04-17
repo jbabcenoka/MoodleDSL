@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <root nodeRef="r:f89d393c-ee61-4074-80d8-290a84e7f0e9(MoodleTests.sandbox)/6569387237471385196">
-    <file name="map_MoodleTest.java">
-      <unit id="6569387237471385196" at="6,0,8,0" name="MoodleTests.sandbox.map_MoodleTest" />
+  <root nodeRef="r:f89d393c-ee61-4074-80d8-290a84e7f0e9(MoodleTests.sandbox)/2463884494659688358">
+    <file name="map_MoodleTests.xml">
+      <unit id="2463884494659688358" at="1,0,36,14" name="MoodleTests.sandbox.map_MoodleTests" />
     </file>
   </root>
 </debug-info>
