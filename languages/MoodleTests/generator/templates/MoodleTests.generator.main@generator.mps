@@ -367,22 +367,8 @@
     <ref role="3gUMe" to="74e2:28Luuj7LmDo" resolve="QuizUsers" />
     <node concept="2pNNFK" id="6YhVlAgUb4S" role="13RCb5">
       <property role="2pNNFO" value="quizUsers" />
-      <node concept="3o6iSG" id="6YhVlAgUbdQ" role="3o6s8t" />
-      <node concept="3o6iSG" id="6YhVlAgUbeG" role="3o6s8t">
-        <node concept="2b32R4" id="3FqswQocUH5" role="lGtFl">
-          <node concept="3JmXsc" id="3FqswQocUH8" role="2P8S$">
-            <node concept="3clFbS" id="3FqswQocUH9" role="2VODD2">
-              <node concept="3clFbF" id="3FqswQocUHf" role="3cqZAp">
-                <node concept="2OqwBi" id="3FqswQocUHa" role="3clFbG">
-                  <node concept="3Tsc0h" id="3FqswQocUHd" role="2OqNvi">
-                    <ref role="3TtcxE" to="74e2:28Luuj7LmZp" resolve="QuizUser" />
-                  </node>
-                  <node concept="30H73N" id="3FqswQocUHe" role="2Oq$k0" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3o6iSG" id="6YhVlAgUbdQ" role="3o6s8t">
+        <property role="3o6i5n" value="" />
       </node>
       <node concept="raruj" id="6YhVlAgUbmt" role="lGtFl" />
     </node>
@@ -393,27 +379,6 @@
     <node concept="2pNNFK" id="6YhVlAgUbZt" role="13RCb5">
       <property role="2pNNFO" value="user" />
       <node concept="3o6iSG" id="6YhVlAgU$Fr" role="3o6s8t" />
-      <node concept="2pNNFK" id="6YhVlAgU_3G" role="3o6s8t">
-        <property role="2pNNFO" value="name" />
-        <node concept="3o6iSG" id="6YhVlAgU$Oz" role="3o6s8t">
-          <node concept="17Uvod" id="6YhVlAgU$Rj" role="lGtFl">
-            <property role="2qtEX9" value="value" />
-            <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
-            <node concept="3zFVjK" id="6YhVlAgU$Rm" role="3zH0cK">
-              <node concept="3clFbS" id="6YhVlAgU$Rn" role="2VODD2">
-                <node concept="3clFbF" id="6YhVlAgU$Rt" role="3cqZAp">
-                  <node concept="2OqwBi" id="6YhVlAgU$Ro" role="3clFbG">
-                    <node concept="3TrcHB" id="6YhVlAgU$Rr" role="2OqNvi">
-                      <ref role="3TsBF5" to="74e2:28Luuj7LnfG" resolve="name" />
-                    </node>
-                    <node concept="30H73N" id="6YhVlAgU$Rs" role="2Oq$k0" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="raruj" id="6YhVlAgUcv9" role="lGtFl" />
     </node>
   </node>

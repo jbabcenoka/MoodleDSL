@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class ShuffleSetting_Editor extends DefaultNodeEditor {
+public class QuizUserFirstNameStartsFrom_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ShuffleSetting_EditorBuilder_a(editorContext, node).createCell();
+    return new QuizUserFirstNameStartsFrom_EditorBuilder_a(editorContext, node).createCell();
   }
 }

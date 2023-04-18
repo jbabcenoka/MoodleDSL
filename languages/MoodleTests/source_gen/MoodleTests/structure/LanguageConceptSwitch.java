@@ -9,33 +9,35 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int AttemptsSetting = 0;
-  public static final int ExerciseWithSubname = 1;
-  public static final int ExerciseWithTag = 2;
-  public static final int Exercises = 3;
-  public static final int MoodleTest = 4;
-  public static final int MoodleTests = 5;
-  public static final int PassGrade = 6;
-  public static final int QuestionsCategory = 7;
-  public static final int QuizUser = 8;
-  public static final int QuizUsers = 9;
-  public static final int Settings = 10;
-  public static final int ShuffleSetting = 11;
+  public static final int ExerciseWithSubname = 0;
+  public static final int ExerciseWithTag = 1;
+  public static final int Exercises = 2;
+  public static final int MoodleTest = 3;
+  public static final int MoodleTests = 4;
+  public static final int QuestionsCategory = 5;
+  public static final int QuizUser = 6;
+  public static final int QuizUserFirstNameStartsFrom = 7;
+  public static final int QuizUserGroup = 8;
+  public static final int QuizUserSecondNameStartsFrom = 9;
+  public static final int QuizUserWithId = 10;
+  public static final int QuizUsers = 11;
+  public static final int Settings = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L);
-    builder.put(0x7b8a85583e50afafL, AttemptsSetting);
     builder.put(0x223179e4c7c4ff1eL, ExerciseWithSubname);
     builder.put(0x223179e4c7c4f2a6L, ExerciseWithTag);
     builder.put(0x5b2b26e2e97718d1L, Exercises);
     builder.put(0x5b2b26e2e97557e4L, MoodleTest);
     builder.put(0x223179e4c7bf010eL, MoodleTests);
-    builder.put(0x7b8a85583e533af5L, PassGrade);
     builder.put(0x7b8a85583e342214L, QuestionsCategory);
-    builder.put(0x223179e4c7c570f9L, QuizUser);
+    builder.put(0x21858de44a29719L, QuizUser);
+    builder.put(0x21858de44a2e506L, QuizUserFirstNameStartsFrom);
+    builder.put(0x21858de44a2ad79L, QuizUserGroup);
+    builder.put(0x21858de44a93921L, QuizUserSecondNameStartsFrom);
+    builder.put(0x223179e4c7c570f9L, QuizUserWithId);
     builder.put(0x223179e4c7c56a58L, QuizUsers);
     builder.put(0x7b8a85583e3bb8deL, Settings);
-    builder.put(0x7b8a85583e3bbda7L, ShuffleSetting);
     myIndex = builder.seal();
   }
 

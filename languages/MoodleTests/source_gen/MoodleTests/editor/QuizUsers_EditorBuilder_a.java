@@ -10,7 +10,12 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
@@ -48,27 +53,38 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createRefNodeList_0());
+    editorCell.addEditorCell(createCollection_1());
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "for users");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "enroll users");
     editorCell.setCellId("Constant_d1onrw_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
+  private EditorCell createCollection_1() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    editorCell.setCellId("Collection_d1onrw_b0");
+    editorCell.addEditorCell(createRefNodeList_0());
+    return editorCell;
+  }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new QuizUserListHandler_d1onrw_b0(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
+    AbstractCellListHandler handler = new QuizUserListHandler_d1onrw_a1a(myNode, getEditorContext());
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_QuizUser");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class QuizUserListHandler_d1onrw_b0 extends RefNodeListHandler {
+  private static class QuizUserListHandler_d1onrw_a1a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public QuizUserListHandler_d1onrw_b0(SNode ownerNode, EditorContext context) {
+    public QuizUserListHandler_d1onrw_a1a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -81,7 +97,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return LINKS.QuizUser$nVRQ;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.QuizUser$uB;
+      return CONCEPTS.QuizUser$Zz;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -91,7 +107,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(QuizUserListHandler_d1onrw_b0.this.getNode(), LINKS.QuizUser$nVRQ));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(QuizUserListHandler_d1onrw_a1a.this.getNode(), LINKS.QuizUser$nVRQ));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -137,6 +153,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept QuizUser$uB = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c570f9L, "MoodleTests.structure.QuizUser");
+    /*package*/ static final SConcept QuizUser$Zz = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a29719L, "MoodleTests.structure.QuizUser");
   }
 }

@@ -16,18 +16,18 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
 
-public final class AttemptsSetting__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e50afafL, "MoodleTests.structure.AttemptsSetting");
+public final class ExerciseWithTag__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4f2a6L, "MoodleTests.structure.ExerciseWithTag");
 
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, PROPS.attempts$cgZl, "unlimited");
+    SPropertyOperations.set(__thisNode__, PROPS.count$8IhV, "1");
   }
 
 
-  /*package*/ AttemptsSetting__BehaviorDescriptor() {
+  /*package*/ ExerciseWithTag__BehaviorDescriptor() {
   }
 
   @Override
@@ -72,6 +72,6 @@ public final class AttemptsSetting__BehaviorDescriptor extends BaseBHDescriptor 
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty attempts$cgZl = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e50afafL, 0x7b8a85583e50b26fL, "attempts");
+    /*package*/ static final SProperty count$8IhV = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4f2a6L, 0x223179e4c7c4f934L, "count");
   }
 }

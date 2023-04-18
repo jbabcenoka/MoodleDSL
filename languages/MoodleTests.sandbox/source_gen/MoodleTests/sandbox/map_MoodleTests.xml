@@ -1,36 +1,46 @@
 <moodleTests>  
   <moodleTest>    
     <questionCategory>Eksamens</questionCategory>
-    <title>FirstQuiz 1 version</title>
+    <title>Eksamens 2023 1 variants</title>
     <exercises>      
       <withSubname>        
-        <count>2</count>
+        <count>3</count>
         <subname>LINQ</subname>
       </withSubname>
-      
-      <withTag>        
+      <withSubname>        
         <count>2</count>
-        <tag>EF</tag>
-      </withTag>
+        <subname>EF</subname>
+      </withSubname>
+      <withSubname>        
+        <count>3</count>
+        <subname>General</subname>
+      </withSubname>
+      
     </exercises>
     
-    <quizUsers>      
-      <user>        
-        <name>jb19045</name>
-      </user>
-    </quizUsers>
+    <quizUsers><!TextGen not found for 'MoodleTests.structure.QuizUserFirstNameStartsFrom'!></quizUsers>
   </moodleTest>
   <moodleTest>    
-    <questionCategory></questionCategory>
-    <title></title>
+    <questionCategory>Eksamens</questionCategory>
+    <title>Eksamens 2023 2 variants</title>
     <exercises>      
+      <withSubname>        
+        <count>3</count>
+        <subname>LINQ</subname>
+      </withSubname>
+      <withSubname>        
+        <count>2</count>
+        <subname>EF</subname>
+      </withSubname>
+      <withSubname>        
+        <count>3</count>
+        <subname>General</subname>
+      </withSubname>
       
     </exercises>
     
     <quizUsers>      
-      <user>        
-        <name></name>
-      </user>
+      <user></user>
     </quizUsers>
   </moodleTest>
 </moodleTests>
