@@ -1,49 +1,33 @@
 <moodleTests>  
   <moodleTest>    
-    <questionCategory>Eksamens</questionCategory>
-    <title>Eksamens 2023 1 variants</title>
-    <exercises>      
-      <withSubname>        
-        <count>9</count>
-        <subname>LINQ</subname>
-      </withSubname>
-      <withSubname>        
-        <count>2</count>
-        <subname>EF</subname>
-      </withSubname>
-      <withSubname>        
-        <count>3</count>
-        <subname>General</subname>
-      </withSubname>
-      
-    </exercises>
-    
-    <quizUsers>      
-      
-      
+    <questionCategory></questionCategory>
+    <title></title>
+    <exercises></exercises>
+    <quizUsers separator="and">      
+      <userId>thht</userId>
+      <userId>fdf</userId>
     </quizUsers>
+    <settings>      
+      <shuffle>true</shuffle>
+      <attempts>unlimited</attempts>
+      <passgrade>4.0</passgrade>
+    </settings>
   </moodleTest>
   <moodleTest>    
-    <questionCategory>Eksamens</questionCategory>
-    <title>Eksamens 2023 2 variants</title>
-    <exercises>      
-      <withSubname>        
-        <count>3</count>
-        <subname>LINQ</subname>
-      </withSubname>
-      <withSubname>        
-        <count>2</count>
-        <subname>EF</subname>
-      </withSubname>
-      <withSubname>        
-        <count>3</count>
-        <subname>General</subname>
-      </withSubname>
-      
-    </exercises>
-    
-    <quizUsers>      
-      
+    <questionCategory></questionCategory>
+    <title></title>
+    <exercises></exercises>
+    <quizUsers separator="or">      
+      <group>fdefe</group>
+      <secondnamestartswith>        
+        <from>d</from>
+        <to>d</to>
+      </secondnamestartswith>
     </quizUsers>
+    <settings>      
+      <shuffle>false</shuffle>
+      <attempts>unlimited</attempts>
+      <passgrade>4.0</passgrade>
+    </settings>
   </moodleTest>
 </moodleTests>

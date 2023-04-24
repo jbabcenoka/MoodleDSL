@@ -73,12 +73,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5GF9IbDtLzh" resolve="Exercises" />
     </node>
-    <node concept="1TJgyj" id="28Luuj7MePd" role="1TKVEi">
-      <property role="IQ2ns" value="2463884494659710285" />
+    <node concept="1TJgyj" id="2hUWFXPrLQt" role="1TKVEi">
+      <property role="IQ2ns" value="2628680236646997405" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="QuizUsers" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="28Luuj7LmDo" resolve="QuizUsers" />
+      <ref role="20lvS9" node="2hUWFXPruqJ" resolve="QuizUsers" />
     </node>
     <node concept="1TJgyj" id="7IaxlwYgYls" role="1TKVEi">
       <property role="IQ2ns" value="8902074227499459932" />
@@ -150,23 +150,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="28Luuj7LmDo">
-    <property role="EcuMT" value="2463884494659480152" />
-    <property role="TrG5h" value="QuizUsers" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="28Luuj7LmQr" role="1TKVEl">
-      <property role="IQ2nx" value="2463884494659480987" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="28Luuj7LmZp" role="1TKVEi">
-      <property role="IQ2ns" value="2463884494659481561" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="QuizUser" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="8omdT4CDsp" resolve="QuizUser" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="28Luuj7Ln3T">
     <property role="EcuMT" value="2463884494659481849" />
     <property role="TrG5h" value="QuizUserWithUsername" />
@@ -228,7 +211,7 @@
   </node>
   <node concept="1TIwiD" id="8omdT4CIk6">
     <property role="EcuMT" value="150968299174421766" />
-    <property role="TrG5h" value="QuizUserFirstNameStartsFrom" />
+    <property role="TrG5h" value="QuizUserFirstNameStartsWith" />
     <property role="34LRSv" value="first name starts from" />
     <ref role="1TJDcQ" node="8omdT4CDsp" resolve="QuizUser" />
     <node concept="1TJgyi" id="8omdT4CIT7" role="1TKVEl">
@@ -244,7 +227,7 @@
   </node>
   <node concept="1TIwiD" id="8omdT4Ej$x">
     <property role="EcuMT" value="150968299174836513" />
-    <property role="TrG5h" value="QuizUserSecondNameStartsFrom" />
+    <property role="TrG5h" value="QuizUserSecondNameStartsWith" />
     <property role="34LRSv" value="second name starts from" />
     <ref role="1TJDcQ" node="8omdT4CDsp" resolve="QuizUser" />
     <node concept="1TJgyi" id="8omdT4Ej$y" role="1TKVEl">
@@ -262,6 +245,41 @@
     <property role="3F6X1D" value="150968299174846292" />
     <property role="TrG5h" value="Character" />
     <property role="FLfZY" value="^[a-zA-Z]{1,30}$" />
+  </node>
+  <node concept="1TIwiD" id="2hUWFXPreLr">
+    <property role="EcuMT" value="2628680236646853723" />
+    <property role="TrG5h" value="QuizUsersAnd" />
+    <property role="34LRSv" value="users separated by and" />
+    <ref role="1TJDcQ" node="2hUWFXPruqJ" resolve="QuizUsers" />
+  </node>
+  <node concept="1TIwiD" id="2hUWFXPrgwa">
+    <property role="EcuMT" value="2628680236646860810" />
+    <property role="TrG5h" value="QuizUsersOr" />
+    <property role="34LRSv" value="users separated by or" />
+    <ref role="1TJDcQ" node="2hUWFXPruqJ" resolve="QuizUsers" />
+  </node>
+  <node concept="1TIwiD" id="2hUWFXPruqJ">
+    <property role="EcuMT" value="2628680236646917807" />
+    <property role="TrG5h" value="QuizUsers" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="2hUWFXPruUV" role="1TKVEi">
+      <property role="IQ2ns" value="2628680236646919867" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="QuizUser" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="8omdT4CDsp" resolve="QuizUser" />
+    </node>
+    <node concept="1TJgyi" id="2hUWFXPr_mB" role="1TKVEl">
+      <property role="IQ2nx" value="2628680236646946215" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="2hUWFXPtB0f">
+    <property role="3F6X1D" value="2628680236647477263" />
+    <property role="TrG5h" value="NotEmptyString" />
+    <property role="FLfZY" value="^.+$" />
   </node>
 </model>
 

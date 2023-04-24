@@ -10,12 +10,7 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
@@ -25,14 +20,18 @@ import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class QuizUsers_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class QuizUsersOr_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public QuizUsers_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public QuizUsersOr_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -49,7 +48,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
-    editorCell.setCellId("Collection_d1onrw_a");
+    editorCell.setCellId("Collection_qhb2ff_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
@@ -57,34 +56,29 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "enroll users");
-    editorCell.setCellId("Constant_d1onrw_a0");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "set quiz users (or)");
+    editorCell.setCellId("Constant_qhb2ff_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createCollection_1() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_d1onrw_b0");
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
+    editorCell.setCellId("Collection_qhb2ff_b0");
     editorCell.addEditorCell(createRefNodeList_0());
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new QuizUserListHandler_d1onrw_a1a(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
+    AbstractCellListHandler handler = new QuizUserListHandler_qhb2ff_a1a(myNode, getEditorContext());
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_QuizUser");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
-    editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class QuizUserListHandler_d1onrw_a1a extends RefNodeListHandler {
+  private static class QuizUserListHandler_qhb2ff_a1a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public QuizUserListHandler_d1onrw_a1a(SNode ownerNode, EditorContext context) {
+    public QuizUserListHandler_qhb2ff_a1a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -94,7 +88,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.QuizUser$nVRQ;
+      return LINKS.QuizUser$T4Qd;
     }
     public SAbstractConcept getChildSConcept() {
       return CONCEPTS.QuizUser$Zz;
@@ -107,10 +101,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(QuizUserListHandler_d1onrw_a1a.this.getNode(), LINKS.QuizUser$nVRQ));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(QuizUserListHandler_qhb2ff_a1a.this.getNode(), LINKS.QuizUser$T4Qd));
       try {
         EditorCell emptyCell = null;
-        emptyCell = createConstant_1();
+        emptyCell = createCollection_2();
         installElementCellActions(null, emptyCell, true);
         setCellContext(emptyCell);
         return emptyCell;
@@ -146,16 +140,48 @@ import org.jetbrains.mps.openapi.language.SConcept;
         }
       }
     }
+    @Override
+    public EditorCell createSeparatorCell(SNode prevNode, SNode nextNode) {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), getNode(), " or ");
+      editorCell.setSelectable(false);
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.LAYOUT_CONSTRAINT, "");
+      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+      editorCell.getStyle().putAll(style);
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+      return editorCell;
+    }
+    private EditorCell createCollection_2() {
+      EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+      editorCell.setCellId("Collection_qhb2ff_a0b0");
+      editorCell.addEditorCell(createConstant_1());
+      editorCell.addEditorCell(createConstant_2());
+      editorCell.addEditorCell(createConstant_3());
+      return editorCell;
+    }
     private EditorCell createConstant_1() {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+      editorCell.setCellId("Constant_qhb2ff_a0a1a");
+      editorCell.setDefaultText("");
+      return editorCell;
+    }
+    private EditorCell createConstant_2() {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+      editorCell.setCellId("Constant_qhb2ff_b0a1a");
+      editorCell.setDefaultText("");
+      return editorCell;
+    }
+    private EditorCell createConstant_3() {
       EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "all course users");
-      editorCell.setCellId("Constant_d1onrw_a0b0");
+      editorCell.setCellId("Constant_qhb2ff_c0a1a");
       editorCell.setDefaultText("");
       return editorCell;
     }
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink QuizUser$nVRQ = MetaAdapterFactory.getContainmentLink(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c56a58L, 0x223179e4c7c56fd9L, "QuizUser");
+    /*package*/ static final SContainmentLink QuizUser$T4Qd = MetaAdapterFactory.getContainmentLink(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x247af2bf756de6afL, 0x247af2bf756deebbL, "QuizUser");
   }
 
   private static final class CONCEPTS {

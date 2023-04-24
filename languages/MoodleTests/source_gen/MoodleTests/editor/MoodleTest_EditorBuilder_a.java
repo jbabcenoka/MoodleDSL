@@ -246,7 +246,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new QuizUsersSingleRoleHandler_xbdhf9_f0(myNode, LINKS.QuizUsers$TFYZ, getEditorContext());
+    SingleRoleCellProvider provider = new QuizUsersSingleRoleHandler_xbdhf9_f0(myNode, LINKS.QuizUsers$5AAf, getEditorContext());
     return provider.createCell();
   }
   private static class QuizUsersSingleRoleHandler_xbdhf9_f0 extends SingleRoleCellProvider {
@@ -266,8 +266,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     protected EditorCell createChildCell(SNode child) {
       EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.QuizUsers$TFYZ, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.QuizUsers$TFYZ, child));
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.QuizUsers$5AAf, child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.QuizUsers$5AAf, child));
       installCellInfo(child, editorCell, false);
       return editorCell;
     }
@@ -279,13 +279,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
         editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
       }
       if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.QuizUsers$TFYZ);
+        editorCell.setSRole(LINKS.QuizUsers$5AAf);
       }
     }
     @Override
     protected EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.QuizUsers$TFYZ));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.QuizUsers$5AAf));
       try {
         EditorCell editorCell = super.createEmptyCell();
         editorCell.setCellId("empty_QuizUsers");
@@ -367,7 +367,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink Exercises$rPHa = MetaAdapterFactory.getContainmentLink(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97557e4L, 0x5b2b26e2e9772576L, "Exercises");
-    /*package*/ static final SContainmentLink QuizUsers$TFYZ = MetaAdapterFactory.getContainmentLink(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97557e4L, 0x223179e4c7c8ed4dL, "QuizUsers");
+    /*package*/ static final SContainmentLink QuizUsers$5AAf = MetaAdapterFactory.getContainmentLink(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97557e4L, 0x247af2bf756f1d9dL, "QuizUsers");
     /*package*/ static final SContainmentLink Settings$1DJd = MetaAdapterFactory.getContainmentLink(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97557e4L, 0x7b8a85583e43e55cL, "Settings");
   }
 }

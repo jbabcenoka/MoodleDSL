@@ -19,15 +19,12 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
-      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
-      <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
-      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
-      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -40,9 +37,6 @@
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
-      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
-        <property id="1186414551515" name="flag" index="VOm3f" />
-      </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
@@ -251,7 +245,7 @@
         <ref role="1NtTu8" to="74e2:5GF9IbDtMlQ" resolve="Exercises" />
       </node>
       <node concept="3F1sOY" id="28Luuj7Mfkj" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:28Luuj7MePd" resolve="QuizUsers" />
+        <ref role="1NtTu8" to="74e2:2hUWFXPrLQt" resolve="QuizUsers" />
       </node>
       <node concept="3F1sOY" id="8omdT4Bo0T" role="3EZMnx">
         <ref role="1NtTu8" to="74e2:7IaxlwYgYls" resolve="Settings" />
@@ -304,40 +298,12 @@
       <node concept="3F0ifn" id="8omdT4EZPs" role="3EZMnx" />
       <node concept="3F0ifn" id="8omdT4EZM2" role="3EZMnx" />
       <node concept="3F0ifn" id="28Luuj7LpPk" role="3EZMnx">
-        <property role="3F0ifm" value="user with id" />
+        <property role="3F0ifm" value="student username is " />
       </node>
       <node concept="3F0A7n" id="7IaxlwYeKFM" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="2iRfu4" id="28Luuj7LpGI" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="28Luuj7Lo5Q">
-    <ref role="1XX52x" to="74e2:28Luuj7LmDo" resolve="QuizUsers" />
-    <node concept="3EZMnI" id="8omdT4E24D" role="2wV5jI">
-      <node concept="3F0ifn" id="8omdT4E2fJ" role="3EZMnx">
-        <property role="3F0ifm" value="enroll users" />
-      </node>
-      <node concept="2iRkQZ" id="8omdT4E24E" role="2iSdaV" />
-      <node concept="3EZMnI" id="8omdT4E2ij" role="3EZMnx">
-        <node concept="2iRfu4" id="8omdT4E2ik" role="2iSdaV" />
-        <node concept="3F2HdR" id="8omdT4DOBg" role="3EZMnx">
-          <ref role="1NtTu8" to="74e2:28Luuj7LmZp" resolve="QuizUser" />
-          <node concept="l2Vlx" id="8omdT4DOBh" role="2czzBx" />
-          <node concept="pj6Ft" id="8omdT4DOBi" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="8omdT4DOBj" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="8omdT4DOBk" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="3F0ifn" id="2hUWFXPpzdn" role="2czzBI">
-            <property role="3F0ifm" value="all course users" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="28Luuj7L_e1">
@@ -592,13 +558,13 @@
     </node>
   </node>
   <node concept="24kQdi" id="8omdT4CJcq">
-    <ref role="1XX52x" to="74e2:8omdT4CIk6" resolve="QuizUserFirstNameStartsFrom" />
+    <ref role="1XX52x" to="74e2:8omdT4CIk6" resolve="QuizUserFirstNameStartsWith" />
     <node concept="3EZMnI" id="8omdT4CJxm" role="2wV5jI">
       <node concept="3F0ifn" id="8omdT4EZi9" role="3EZMnx" />
       <node concept="3F0ifn" id="8omdT4EZdl" role="3EZMnx" />
       <node concept="2iRfu4" id="8omdT4CJxn" role="2iSdaV" />
       <node concept="3F0ifn" id="8omdT4CJLl" role="3EZMnx">
-        <property role="3F0ifm" value="first name starts from " />
+        <property role="3F0ifm" value="student first name starts with " />
       </node>
       <node concept="3F0A7n" id="8omdT4CKoz" role="3EZMnx">
         <ref role="1NtTu8" to="74e2:8omdT4CIT7" resolve="from" />
@@ -624,12 +590,12 @@
     </node>
   </node>
   <node concept="24kQdi" id="8omdT4Ek9_">
-    <ref role="1XX52x" to="74e2:8omdT4Ej$x" resolve="QuizUserSecondNameStartsFrom" />
+    <ref role="1XX52x" to="74e2:8omdT4Ej$x" resolve="QuizUserSecondNameStartsWith" />
     <node concept="3EZMnI" id="8omdT4EkjT" role="2wV5jI">
       <node concept="3F0ifn" id="8omdT4EYXu" role="3EZMnx" />
       <node concept="3F0ifn" id="8omdT4EYU5" role="3EZMnx" />
       <node concept="3F0ifn" id="8omdT4EkuE" role="3EZMnx">
-        <property role="3F0ifm" value="second name starts from" />
+        <property role="3F0ifm" value="student second name starts with" />
       </node>
       <node concept="2iRfu4" id="8omdT4EkjU" role="2iSdaV" />
       <node concept="3F0A7n" id="8omdT4Eke$" role="3EZMnx">
@@ -640,6 +606,56 @@
       </node>
       <node concept="3F0A7n" id="8omdT4EliB" role="3EZMnx">
         <ref role="1NtTu8" to="74e2:8omdT4Ej$z" resolve="to" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2hUWFXPrf7M">
+    <ref role="1XX52x" to="74e2:2hUWFXPreLr" resolve="QuizUsersAnd" />
+    <node concept="3EZMnI" id="2hUWFXPrf8C" role="2wV5jI">
+      <node concept="3F0ifn" id="2hUWFXPrf8D" role="3EZMnx">
+        <property role="3F0ifm" value="set quiz users (and)" />
+      </node>
+      <node concept="2iRkQZ" id="2hUWFXPrf8E" role="2iSdaV" />
+      <node concept="3EZMnI" id="2hUWFXPtgz6" role="3EZMnx">
+        <node concept="2iRkQZ" id="2hUWFXPtgz7" role="2iSdaV" />
+        <node concept="3F2HdR" id="2hUWFXPrfyQ" role="3EZMnx">
+          <property role="2czwfO" value=" and " />
+          <ref role="1NtTu8" to="74e2:2hUWFXPruUV" resolve="QuizUser" />
+          <node concept="2iRkQZ" id="2hUWFXPuK96" role="2czzBx" />
+          <node concept="3EZMnI" id="2hUWFXPsW_A" role="2czzBI">
+            <node concept="2iRfu4" id="2hUWFXPsW_B" role="2iSdaV" />
+            <node concept="3F0ifn" id="2hUWFXPsWx5" role="3EZMnx" />
+            <node concept="3F0ifn" id="2hUWFXPsWFl" role="3EZMnx" />
+            <node concept="3F0ifn" id="2hUWFXPsWQm" role="3EZMnx">
+              <property role="3F0ifm" value="all course users" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2hUWFXPrhU9">
+    <ref role="1XX52x" to="74e2:2hUWFXPrgwa" resolve="QuizUsersOr" />
+    <node concept="3EZMnI" id="2hUWFXPrhUZ" role="2wV5jI">
+      <node concept="3F0ifn" id="2hUWFXPrhV0" role="3EZMnx">
+        <property role="3F0ifm" value="set quiz users (or)" />
+      </node>
+      <node concept="2iRkQZ" id="2hUWFXPrhV1" role="2iSdaV" />
+      <node concept="3EZMnI" id="2hUWFXPtgFi" role="3EZMnx">
+        <node concept="2iRkQZ" id="2hUWFXPtgFj" role="2iSdaV" />
+        <node concept="3F2HdR" id="2hUWFXPrhV4" role="3EZMnx">
+          <property role="2czwfO" value=" or " />
+          <ref role="1NtTu8" to="74e2:2hUWFXPruUV" resolve="QuizUser" />
+          <node concept="3EZMnI" id="2hUWFXPsXm5" role="2czzBI">
+            <node concept="2iRfu4" id="2hUWFXPsXm6" role="2iSdaV" />
+            <node concept="3F0ifn" id="2hUWFXPsXm7" role="3EZMnx" />
+            <node concept="3F0ifn" id="2hUWFXPsXm8" role="3EZMnx" />
+            <node concept="3F0ifn" id="2hUWFXPsXm9" role="3EZMnx">
+              <property role="3F0ifm" value="all course users" />
+            </node>
+          </node>
+          <node concept="2iRkQZ" id="2hUWFXPtthT" role="2czzBx" />
+        </node>
       </node>
     </node>
   </node>

@@ -15,11 +15,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_MoodleTest;
   private ConceptPresentation props_MoodleTests;
   private ConceptPresentation props_QuizUser;
-  private ConceptPresentation props_QuizUserFirstNameStartsFrom;
+  private ConceptPresentation props_QuizUserFirstNameStartsWith;
   private ConceptPresentation props_QuizUserGroup;
-  private ConceptPresentation props_QuizUserSecondNameStartsFrom;
+  private ConceptPresentation props_QuizUserSecondNameStartsWith;
   private ConceptPresentation props_QuizUserWithUsername;
   private ConceptPresentation props_QuizUsers;
+  private ConceptPresentation props_QuizUsersAnd;
+  private ConceptPresentation props_QuizUsersOr;
   private ConceptPresentation props_Settings;
 
   @Override
@@ -68,13 +70,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_QuizUser = cpb.create();
         }
         return props_QuizUser;
-      case LanguageConceptSwitch.QuizUserFirstNameStartsFrom:
-        if (props_QuizUserFirstNameStartsFrom == null) {
+      case LanguageConceptSwitch.QuizUserFirstNameStartsWith:
+        if (props_QuizUserFirstNameStartsWith == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("first name starts from");
-          props_QuizUserFirstNameStartsFrom = cpb.create();
+          props_QuizUserFirstNameStartsWith = cpb.create();
         }
-        return props_QuizUserFirstNameStartsFrom;
+        return props_QuizUserFirstNameStartsWith;
       case LanguageConceptSwitch.QuizUserGroup:
         if (props_QuizUserGroup == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -82,13 +84,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_QuizUserGroup = cpb.create();
         }
         return props_QuizUserGroup;
-      case LanguageConceptSwitch.QuizUserSecondNameStartsFrom:
-        if (props_QuizUserSecondNameStartsFrom == null) {
+      case LanguageConceptSwitch.QuizUserSecondNameStartsWith:
+        if (props_QuizUserSecondNameStartsWith == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("second name starts from");
-          props_QuizUserSecondNameStartsFrom = cpb.create();
+          props_QuizUserSecondNameStartsWith = cpb.create();
         }
-        return props_QuizUserSecondNameStartsFrom;
+        return props_QuizUserSecondNameStartsWith;
       case LanguageConceptSwitch.QuizUserWithUsername:
         if (props_QuizUserWithUsername == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -99,10 +101,23 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.QuizUsers:
         if (props_QuizUsers == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("QuizUsers");
           props_QuizUsers = cpb.create();
         }
         return props_QuizUsers;
+      case LanguageConceptSwitch.QuizUsersAnd:
+        if (props_QuizUsersAnd == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("users separated by and");
+          props_QuizUsersAnd = cpb.create();
+        }
+        return props_QuizUsersAnd;
+      case LanguageConceptSwitch.QuizUsersOr:
+        if (props_QuizUsersOr == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("users separated by or");
+          props_QuizUsersOr = cpb.create();
+        }
+        return props_QuizUsersOr;
       case LanguageConceptSwitch.Settings:
         if (props_Settings == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
