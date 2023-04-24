@@ -79,11 +79,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.characterFrom$VQ7m;
+      final SProperty property = PROPS.from$VQ7m;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no characterFrom>");
-      editorCell.setCellId("property_characterFrom");
+      editorCell.setDefaultText("<no from>");
+      editorCell.setCellId("property_from");
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
@@ -110,11 +110,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.characterTo$VQmn;
+      final SProperty property = PROPS.to$VQmn;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no characterTo>");
-      editorCell.setCellId("property_characterTo");
+      editorCell.setDefaultText("<no to>");
+      editorCell.setCellId("property_to");
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
@@ -134,8 +134,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty characterFrom$VQ7m = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a93921L, 0x21858de44a93922L, "characterFrom");
-    /*package*/ static final SProperty characterTo$VQmn = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a93921L, 0x21858de44a93923L, "characterTo");
+    /*package*/ static final SProperty from$VQ7m = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a93921L, 0x21858de44a93922L, "from");
+    /*package*/ static final SProperty to$VQmn = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a93921L, 0x21858de44a93923L, "to");
   }
 
   private static final class CONCEPTS {

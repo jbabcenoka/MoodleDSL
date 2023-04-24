@@ -21,10 +21,7 @@
         <property id="150968299173760214" name="passgrade" index="16w9g8" />
         <property id="150968299173768026" name="attempts" index="16wbe4" />
       </concept>
-      <concept id="150968299174421766" name="MoodleTests.structure.QuizUserFirstNameStartsFrom" flags="ng" index="16IFRo">
-        <property id="150968299174424683" name="characterTo" index="16IEyP" />
-        <property id="150968299174424135" name="characterFrom" index="16IFqp" />
-      </concept>
+      <concept id="150968299174407545" name="MoodleTests.structure.QuizUserGroup" flags="ng" index="16IJmB" />
       <concept id="2463884494659059982" name="MoodleTests.structure.MoodleTests" flags="ng" index="3_zBzE">
         <child id="2463884494659060893" name="Content" index="3_zBPT" />
       </concept>
@@ -49,7 +46,7 @@
       <property role="2Mn45T" value="Eksamens 2023 1 variants" />
       <node concept="2Mn3SN" id="8omdT4FeSU" role="2Mn0ek">
         <node concept="3_XorU" id="8omdT4FeT1" role="3_X6P_">
-          <property role="3_X7DN" value="3" />
+          <property role="3_X7DN" value="9" />
           <property role="3_X7Of" value="LINQ" />
         </node>
         <node concept="3_XorU" id="8omdT4FeT3" role="3_X6P_">
@@ -62,14 +59,16 @@
         </node>
       </node>
       <node concept="3_X1eW" id="8omdT4FeSV" role="3_YpiD">
-        <node concept="16IFRo" id="8omdT4FeTc" role="3_X1oX">
-          <property role="16IFqp" value="A" />
-          <property role="16IEyP" value="K" />
+        <node concept="3_X0$t" id="8omdT4FnNE" role="3_X1oX">
+          <property role="TrG5h" value="jddd" />
+        </node>
+        <node concept="16IJmB" id="8omdT4FnNS" role="3_X1oX">
+          <property role="TrG5h" value="new group" />
         </node>
       </node>
       <node concept="15GjQ6" id="8omdT4FeSW" role="15Mm04">
         <property role="16wbe4" value="unlimited" />
-        <property role="16w9g8" value="4.0" />
+        <property role="16w9g8" value="10.0" />
       </node>
     </node>
     <node concept="2MnB46" id="8omdT4FeT_" role="3_zBPT">

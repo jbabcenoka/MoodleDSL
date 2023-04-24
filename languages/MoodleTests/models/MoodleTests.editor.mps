@@ -254,7 +254,7 @@
         <ref role="1NtTu8" to="74e2:28Luuj7MePd" resolve="QuizUsers" />
       </node>
       <node concept="3F1sOY" id="8omdT4Bo0T" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:7IaxlwYgYls" resolve="Settins" />
+        <ref role="1NtTu8" to="74e2:7IaxlwYgYls" resolve="Settings" />
       </node>
       <node concept="2iRkQZ" id="28Luuj7KJHy" role="2iSdaV" />
     </node>
@@ -299,7 +299,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="28Luuj7Lnsz">
-    <ref role="1XX52x" to="74e2:28Luuj7Ln3T" resolve="QuizUserWithId" />
+    <ref role="1XX52x" to="74e2:28Luuj7Ln3T" resolve="QuizUserWithUsername" />
     <node concept="3EZMnI" id="28Luuj7LpGF" role="2wV5jI">
       <node concept="3F0ifn" id="8omdT4EZPs" role="3EZMnx" />
       <node concept="3F0ifn" id="8omdT4EZM2" role="3EZMnx" />
@@ -332,6 +332,9 @@
           </node>
           <node concept="ljvvj" id="8omdT4DOBk" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="2hUWFXPpzdn" role="2czzBI">
+            <property role="3F0ifm" value="all course users" />
           </node>
         </node>
       </node>
@@ -598,7 +601,7 @@
         <property role="3F0ifm" value="first name starts from " />
       </node>
       <node concept="3F0A7n" id="8omdT4CKoz" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:8omdT4CIT7" resolve="characterFrom" />
+        <ref role="1NtTu8" to="74e2:8omdT4CIT7" resolve="from" />
         <node concept="VechU" id="8omdT4E4UD" role="3F10Kt">
           <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
@@ -610,7 +613,7 @@
         <property role="3F0ifm" value="to " />
       </node>
       <node concept="3F0A7n" id="8omdT4CKyK" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:8omdT4CJ1F" resolve="characterTo" />
+        <ref role="1NtTu8" to="74e2:8omdT4CJ1F" resolve="to" />
         <node concept="VechU" id="8omdT4E58e" role="3F10Kt">
           <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
@@ -630,13 +633,13 @@
       </node>
       <node concept="2iRfu4" id="8omdT4EkjU" role="2iSdaV" />
       <node concept="3F0A7n" id="8omdT4Eke$" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:8omdT4Ej$y" resolve="characterFrom" />
+        <ref role="1NtTu8" to="74e2:8omdT4Ej$y" resolve="from" />
       </node>
       <node concept="3F0ifn" id="8omdT4El2B" role="3EZMnx">
         <property role="3F0ifm" value="to" />
       </node>
       <node concept="3F0A7n" id="8omdT4EliB" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:8omdT4Ej$z" resolve="characterTo" />
+        <ref role="1NtTu8" to="74e2:8omdT4Ej$z" resolve="to" />
       </node>
     </node>
   </node>

@@ -110,7 +110,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(QuizUserListHandler_d1onrw_a1a.this.getNode(), LINKS.QuizUser$nVRQ));
       try {
         EditorCell emptyCell = null;
-        emptyCell = super.createEmptyCell();
+        emptyCell = createConstant_1();
         installElementCellActions(null, emptyCell, true);
         setCellContext(emptyCell);
         return emptyCell;
@@ -145,6 +145,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
           elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, OBJ);
         }
       }
+    }
+    private EditorCell createConstant_1() {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "all course users");
+      editorCell.setCellId("Constant_d1onrw_a0b0");
+      editorCell.setDefaultText("");
+      return editorCell;
     }
   }
 

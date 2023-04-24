@@ -4,7 +4,7 @@
     <title>Eksamens 2023 1 variants</title>
     <exercises>      
       <withSubname>        
-        <count>3</count>
+        <count>9</count>
         <subname>LINQ</subname>
       </withSubname>
       <withSubname>        
@@ -18,7 +18,10 @@
       
     </exercises>
     
-    <quizUsers><!TextGen not found for 'MoodleTests.structure.QuizUserFirstNameStartsFrom'!></quizUsers>
+    <quizUsers>      
+      
+      
+    </quizUsers>
   </moodleTest>
   <moodleTest>    
     <questionCategory>Eksamens</questionCategory>
@@ -40,7 +43,7 @@
     </exercises>
     
     <quizUsers>      
-      <user></user>
+      
     </quizUsers>
   </moodleTest>
 </moodleTests>

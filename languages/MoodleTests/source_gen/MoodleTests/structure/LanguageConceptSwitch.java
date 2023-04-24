@@ -14,14 +14,13 @@ public final class LanguageConceptSwitch {
   public static final int Exercises = 2;
   public static final int MoodleTest = 3;
   public static final int MoodleTests = 4;
-  public static final int QuestionsCategory = 5;
-  public static final int QuizUser = 6;
-  public static final int QuizUserFirstNameStartsFrom = 7;
-  public static final int QuizUserGroup = 8;
-  public static final int QuizUserSecondNameStartsFrom = 9;
-  public static final int QuizUserWithId = 10;
-  public static final int QuizUsers = 11;
-  public static final int Settings = 12;
+  public static final int QuizUser = 5;
+  public static final int QuizUserFirstNameStartsFrom = 6;
+  public static final int QuizUserGroup = 7;
+  public static final int QuizUserSecondNameStartsFrom = 8;
+  public static final int QuizUserWithUsername = 9;
+  public static final int QuizUsers = 10;
+  public static final int Settings = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L);
@@ -30,12 +29,11 @@ public final class LanguageConceptSwitch {
     builder.put(0x5b2b26e2e97718d1L, Exercises);
     builder.put(0x5b2b26e2e97557e4L, MoodleTest);
     builder.put(0x223179e4c7bf010eL, MoodleTests);
-    builder.put(0x7b8a85583e342214L, QuestionsCategory);
     builder.put(0x21858de44a29719L, QuizUser);
     builder.put(0x21858de44a2e506L, QuizUserFirstNameStartsFrom);
     builder.put(0x21858de44a2ad79L, QuizUserGroup);
     builder.put(0x21858de44a93921L, QuizUserSecondNameStartsFrom);
-    builder.put(0x223179e4c7c570f9L, QuizUserWithId);
+    builder.put(0x223179e4c7c570f9L, QuizUserWithUsername);
     builder.put(0x223179e4c7c56a58L, QuizUsers);
     builder.put(0x7b8a85583e3bb8deL, Settings);
     myIndex = builder.seal();
