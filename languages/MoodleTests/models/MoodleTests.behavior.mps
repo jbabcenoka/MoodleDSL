@@ -127,7 +127,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="8omdT4ElS9">
-    <ref role="13h7C2" to="74e2:8omdT4Ej$x" resolve="QuizUserSecondNameStartsFrom" />
+    <ref role="13h7C2" to="74e2:8omdT4Ej$x" resolve="QuizUserSecondNameStartsWith" />
     <node concept="13hLZK" id="8omdT4ElSa" role="13h7CW">
       <node concept="3clFbS" id="8omdT4ElSb" role="2VODD2" />
     </node>

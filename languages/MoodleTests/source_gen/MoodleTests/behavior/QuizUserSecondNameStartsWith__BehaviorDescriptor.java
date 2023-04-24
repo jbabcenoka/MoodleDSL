@@ -14,8 +14,8 @@ import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
-public final class QuizUserSecondNameStartsFrom__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a93921L, "MoodleTests.structure.QuizUserSecondNameStartsFrom");
+public final class QuizUserSecondNameStartsWith__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a93921L, "MoodleTests.structure.QuizUserSecondNameStartsWith");
 
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
@@ -24,7 +24,7 @@ public final class QuizUserSecondNameStartsFrom__BehaviorDescriptor extends Base
   }
 
 
-  /*package*/ QuizUserSecondNameStartsFrom__BehaviorDescriptor() {
+  /*package*/ QuizUserSecondNameStartsWith__BehaviorDescriptor() {
   }
 
   @Override

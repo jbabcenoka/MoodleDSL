@@ -12,7 +12,7 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
-  private final BHDescriptor myQuizUserSecondNameStartsFrom__BehaviorDescriptor = new QuizUserSecondNameStartsFrom__BehaviorDescriptor();
+  private final BHDescriptor myQuizUserSecondNameStartsWith__BehaviorDescriptor = new QuizUserSecondNameStartsWith__BehaviorDescriptor();
   private final BHDescriptor myExerciseWithTag__BehaviorDescriptor = new ExerciseWithTag__BehaviorDescriptor();
   private final BHDescriptor myExerciseWithSubname__BehaviorDescriptor = new ExerciseWithSubname__BehaviorDescriptor();
   private final BHDescriptor mySettings__BehaviorDescriptor = new Settings__BehaviorDescriptor();
@@ -29,7 +29,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 1:
         return myExerciseWithTag__BehaviorDescriptor;
       case 2:
-        return myQuizUserSecondNameStartsFrom__BehaviorDescriptor;
+        return myQuizUserSecondNameStartsWith__BehaviorDescriptor;
       case 3:
         return mySettings__BehaviorDescriptor;
       default:

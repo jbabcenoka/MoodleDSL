@@ -14,12 +14,6 @@ import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.openapi.editor.style.StyleRegistry;
-import jetbrains.mps.nodeEditor.MPSColors;
-import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
@@ -32,11 +26,11 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class QuizUserFirstNameStartsFrom_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class QuizUserSecondNameStartsWith_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public QuizUserFirstNameStartsFrom_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public QuizUserSecondNameStartsWith_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -53,7 +47,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_lcnz2j_a");
+    editorCell.setCellId("Collection_g0lduj_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
@@ -66,34 +60,30 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_lcnz2j_a0");
+    editorCell.setCellId("Constant_g0lduj_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_lcnz2j_b0");
+    editorCell.setCellId("Constant_g0lduj_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createConstant_2() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "first name starts from ");
-    editorCell.setCellId("Constant_lcnz2j_c0");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "student second name starts with");
+    editorCell.setCellId("Constant_g0lduj_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.from$k14e;
+      final SProperty property = PROPS.from$VQ7m;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
       editorCell.setDefaultText("<no from>");
       editorCell.setCellId("property_from");
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_GREEN));
-      style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
-      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
@@ -112,23 +102,19 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "to ");
-    editorCell.setCellId("Constant_lcnz2j_e0");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "to");
+    editorCell.setCellId("Constant_g0lduj_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.to$AcjG;
+      final SProperty property = PROPS.to$VQmn;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
       editorCell.setDefaultText("<no to>");
       editorCell.setCellId("property_to");
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_GREEN));
-      style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
-      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
@@ -148,8 +134,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty from$k14e = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a2e506L, 0x21858de44a2ee47L, "from");
-    /*package*/ static final SProperty to$AcjG = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a2e506L, 0x21858de44a2f06bL, "to");
+    /*package*/ static final SProperty from$VQ7m = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a93921L, 0x21858de44a93922L, "from");
+    /*package*/ static final SProperty to$VQmn = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a93921L, 0x21858de44a93923L, "to");
   }
 
   private static final class CONCEPTS {
