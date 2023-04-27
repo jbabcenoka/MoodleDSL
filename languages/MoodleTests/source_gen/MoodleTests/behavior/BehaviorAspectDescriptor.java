@@ -12,7 +12,6 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
-  private final BHDescriptor myQuizUserSecondNameStartsWith__BehaviorDescriptor = new QuizUserSecondNameStartsWith__BehaviorDescriptor();
   private final BHDescriptor myExerciseWithTag__BehaviorDescriptor = new ExerciseWithTag__BehaviorDescriptor();
   private final BHDescriptor myExerciseWithSubname__BehaviorDescriptor = new ExerciseWithSubname__BehaviorDescriptor();
   private final BHDescriptor mySettings__BehaviorDescriptor = new Settings__BehaviorDescriptor();
@@ -29,12 +28,10 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 1:
         return myExerciseWithTag__BehaviorDescriptor;
       case 2:
-        return myQuizUserSecondNameStartsWith__BehaviorDescriptor;
-      case 3:
         return mySettings__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4ff1eL), MetaIdFactory.conceptId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4f2a6L), MetaIdFactory.conceptId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21858de44a93921L), MetaIdFactory.conceptId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e3bb8deL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4ff1eL), MetaIdFactory.conceptId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4f2a6L), MetaIdFactory.conceptId(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e3bb8deL)).seal();
 }

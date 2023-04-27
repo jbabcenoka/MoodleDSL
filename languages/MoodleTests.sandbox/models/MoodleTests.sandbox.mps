@@ -7,7 +7,10 @@
   <imports />
   <registry>
     <language id="54f7c488-43b4-42ec-a6a7-b6ba91a8bda2" name="MoodleTests">
-      <concept id="6569387237471361233" name="MoodleTests.structure.Exercises" flags="ng" index="2Mn3SN" />
+      <concept id="6569387237471361233" name="MoodleTests.structure.Exercises" flags="ng" index="2Mn3SN">
+        <child id="2463884494659458177" name="ContentWithSubname" index="3_X6P_" />
+        <child id="2463884494659845225" name="ContentWithTag" index="3_YSmd" />
+      </concept>
       <concept id="6569387237471246308" name="MoodleTests.structure.MoodleTest" flags="ng" index="2MnB46">
         <property id="6569387237471381403" name="title" index="2Mn45T" />
         <property id="8902074227498730948" name="questionCategory" index="15G$2s" />
@@ -20,20 +23,24 @@
         <property id="150968299173768026" name="attempts" index="16wbe4" />
         <property id="150968299173832750" name="shuffle" index="16wr3K" />
       </concept>
-      <concept id="150968299174836513" name="MoodleTests.structure.QuizUserSecondNameStartsWith" flags="ng" index="16Gm7Z">
-        <property id="150968299174836514" name="from" index="16Gm7W" />
-        <property id="150968299174836515" name="to" index="16Gm7X" />
-      </concept>
-      <concept id="150968299174407545" name="MoodleTests.structure.QuizUserGroup" flags="ng" index="16IJmB" />
-      <concept id="2628680236646853723" name="MoodleTests.structure.QuizUsersAnd" flags="ng" index="1h5xV$" />
       <concept id="2628680236646917807" name="MoodleTests.structure.QuizUsers" flags="ng" index="1h5Lgg">
+        <property id="2441660594466964504" name="separator" index="3EDO57" />
         <child id="2628680236646919867" name="QuizUser" index="1h5LK4" />
       </concept>
-      <concept id="2628680236646860810" name="MoodleTests.structure.QuizUsersOr" flags="ng" index="1h5ZEP" />
       <concept id="2463884494659059982" name="MoodleTests.structure.MoodleTests" flags="ng" index="3_zBzE">
         <child id="2463884494659060893" name="Content" index="3_zBPT" />
       </concept>
-      <concept id="2463884494659481849" name="MoodleTests.structure.QuizUserWithUsername" flags="ng" index="3_X0$t" />
+      <concept id="2463884494659452702" name="MoodleTests.structure.ExerciseWithSubname" flags="ng" index="3_XorU">
+        <property id="2463884494659453847" name="count" index="3_X7DN" />
+        <property id="2463884494659454187" name="subname" index="3_X7Of" />
+      </concept>
+      <concept id="2463884494659449510" name="MoodleTests.structure.ExerciseWithTag" flags="ng" index="3_XoH2">
+        <property id="2463884494659451188" name="count" index="3_Xo3g" />
+        <property id="2463884494659451476" name="tag" index="3_XoeK" />
+      </concept>
+      <concept id="2441660594466602427" name="MoodleTests.structure.QuizUser" flags="ng" index="3ECFz$">
+        <property id="2441660594466603575" name="condition" index="3ECGtC" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -42,40 +49,38 @@
     </language>
   </registry>
   <node concept="3_zBzE" id="28Luuj7M9uA">
-    <node concept="2MnB46" id="2hUWFXPuM5g" role="3_zBPT">
-      <property role="15G$2s" value="thth" />
-      <property role="2Mn45T" value="ththt" />
-      <node concept="2Mn3SN" id="2hUWFXPuM5h" role="2Mn0ek" />
-      <node concept="1h5xV$" id="2hUWFXPuN1E" role="1h5uWy">
-        <node concept="3_X0$t" id="2hUWFXPuVH2" role="1h5LK4">
-          <property role="TrG5h" value="thht" />
+    <node concept="2MnB46" id="27yxlZbjiIw" role="3_zBPT">
+      <property role="15G$2s" value="Default for Math" />
+      <property role="2Mn45T" value="KD2 2023 4 variants" />
+      <node concept="2Mn3SN" id="27yxlZbjiIx" role="2Mn0ek">
+        <node concept="3_XoH2" id="27yxlZbjiIQ" role="3_YSmd">
+          <property role="3_Xo3g" value="1" />
+          <property role="3_XoeK" value="writable" />
         </node>
-        <node concept="3_X0$t" id="2hUWFXPuVH8" role="1h5LK4">
-          <property role="TrG5h" value="fdf" />
+        <node concept="3_XorU" id="27yxlZbjiIC" role="3_X6P_">
+          <property role="3_X7DN" value="3" />
+          <property role="3_X7Of" value="EF querying data" />
+        </node>
+        <node concept="3_XorU" id="27yxlZbjiIE" role="3_X6P_">
+          <property role="3_X7DN" value="1" />
+          <property role="3_X7Of" value="LINQ" />
+        </node>
+        <node concept="3_XorU" id="4tigqo4OzqE" role="3_X6P_">
+          <property role="3_X7DN" value="1" />
+          <property role="3_X7Of" value="general" />
         </node>
       </node>
-      <node concept="15GjQ6" id="2hUWFXPuM5j" role="15Mm04">
-        <property role="16wbe4" value="unlimited" />
+      <node concept="1h5Lgg" id="27yxlZbjiIy" role="1h5uWy">
+        <property role="3EDO57" value="27yxlZbhsll/and" />
+        <node concept="3ECFz$" id="27yxlZbjiJp" role="1h5LK4">
+          <property role="TrG5h" value="j" />
+          <property role="3ECGtC" value="27yxlZbhgFN/startswith" />
+        </node>
+      </node>
+      <node concept="15GjQ6" id="27yxlZbjiIz" role="15Mm04">
+        <property role="16wbe4" value="9" />
         <property role="16w9g8" value="4.0" />
         <property role="16wr3K" value="true" />
-      </node>
-    </node>
-    <node concept="2MnB46" id="2hUWFXPv1fs" role="3_zBPT">
-      <property role="15G$2s" value="tht" />
-      <property role="2Mn45T" value="thth" />
-      <node concept="2Mn3SN" id="2hUWFXPv1ft" role="2Mn0ek" />
-      <node concept="1h5ZEP" id="2hUWFXPv1fE" role="1h5uWy">
-        <node concept="16IJmB" id="2hUWFXPv1fJ" role="1h5LK4">
-          <property role="TrG5h" value="fdefe" />
-        </node>
-        <node concept="16Gm7Z" id="2hUWFXPv1fP" role="1h5LK4">
-          <property role="16Gm7W" value="d" />
-          <property role="16Gm7X" value="d" />
-        </node>
-      </node>
-      <node concept="15GjQ6" id="2hUWFXPv1fv" role="15Mm04">
-        <property role="16wbe4" value="unlimited" />
-        <property role="16w9g8" value="4.0" />
       </node>
     </node>
   </node>

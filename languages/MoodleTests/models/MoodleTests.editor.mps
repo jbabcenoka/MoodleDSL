@@ -12,19 +12,20 @@
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="74e2" ref="r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
-        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
+        <child id="928328222691832421" name="separatorTextQuery" index="2gpyvW" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="709996738298806197" name="jetbrains.mps.lang.editor.structure.QueryFunction_SeparatorText" flags="in" index="2o9xnK" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -292,20 +293,6 @@
       <node concept="2iRkQZ" id="28Luuj7LkLL" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="28Luuj7Lnsz">
-    <ref role="1XX52x" to="74e2:28Luuj7Ln3T" resolve="QuizUserWithUsername" />
-    <node concept="3EZMnI" id="28Luuj7LpGF" role="2wV5jI">
-      <node concept="3F0ifn" id="8omdT4EZPs" role="3EZMnx" />
-      <node concept="3F0ifn" id="8omdT4EZM2" role="3EZMnx" />
-      <node concept="3F0ifn" id="28Luuj7LpPk" role="3EZMnx">
-        <property role="3F0ifm" value="student username is " />
-      </node>
-      <node concept="3F0A7n" id="7IaxlwYeKFM" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="2iRfu4" id="28Luuj7LpGI" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="28Luuj7L_e1">
     <ref role="1XX52x" to="74e2:28Luuj7LfWu" resolve="ExerciseWithSubname" />
     <node concept="3EZMnI" id="28Luuj7L_jM" role="2wV5jI">
@@ -346,7 +333,7 @@
       <node concept="3F0A7n" id="7IaxlwYeKuu" role="3EZMnx">
         <ref role="1NtTu8" to="74e2:28Luuj7Lf$O" resolve="count" />
         <node concept="VechU" id="7IaxlwYfcAa" role="3F10Kt">
-          <property role="Vb096" value="g1_qRwE/darkGreen" />
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
         </node>
         <node concept="Vb9p2" id="7IaxlwYgTak" role="3F10Kt">
           <property role="Vbekb" value="g1_k_vY/BOLD" />
@@ -361,7 +348,7 @@
       <node concept="3F0A7n" id="7IaxlwYeKxo" role="3EZMnx">
         <ref role="1NtTu8" to="74e2:28Luuj7LfDk" resolve="tag" />
         <node concept="VechU" id="7IaxlwYfcFu" role="3F10Kt">
-          <property role="Vb096" value="g1_qRwE/darkGreen" />
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
         </node>
       </node>
       <node concept="2iRfu4" id="28Luuj7L_Rx" role="2iSdaV" />
@@ -543,118 +530,90 @@
       <node concept="3F0ifn" id="8omdT4AaES" role="3EZMnx" />
     </node>
   </node>
-  <node concept="24kQdi" id="8omdT4CG8g">
-    <ref role="1XX52x" to="74e2:8omdT4CEPT" resolve="QuizUserGroup" />
-    <node concept="3EZMnI" id="8omdT4CGSX" role="2wV5jI">
-      <node concept="3F0ifn" id="8omdT4EZs$" role="3EZMnx" />
-      <node concept="3F0ifn" id="8omdT4EZv$" role="3EZMnx" />
-      <node concept="2iRfu4" id="8omdT4CGSY" role="2iSdaV" />
-      <node concept="3F0ifn" id="8omdT4CGQS" role="3EZMnx">
-        <property role="3F0ifm" value="for group " />
+  <node concept="24kQdi" id="27yxlZbg5pJ">
+    <ref role="1XX52x" to="74e2:27yxlZbg3QV" resolve="QuizUser" />
+    <node concept="3EZMnI" id="27yxlZbg5_e" role="2wV5jI">
+      <node concept="2iRfu4" id="27yxlZbg5_f" role="2iSdaV" />
+      <node concept="3F0ifn" id="27yxlZbg6Bv" role="3EZMnx" />
+      <node concept="3F0ifn" id="27yxlZbg6Ga" role="3EZMnx" />
+      <node concept="3F0ifn" id="27yxlZbg6Rn" role="3EZMnx">
+        <property role="3F0ifm" value="student" />
       </node>
-      <node concept="3F0A7n" id="8omdT4CGZE" role="3EZMnx">
+      <node concept="3F0A7n" id="27yxlZbg5HU" role="3EZMnx">
+        <ref role="1NtTu8" to="74e2:27yxlZbg3Z5" resolve="field" />
+      </node>
+      <node concept="3F0A7n" id="27yxlZbg644" role="3EZMnx">
+        <ref role="1NtTu8" to="74e2:27yxlZbg48R" resolve="condition" />
+        <node concept="Vb9p2" id="27yxlZbiU_G" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="27yxlZbhq1C" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+      </node>
+      <node concept="3F0A7n" id="27yxlZbg6gV" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="8omdT4CJcq">
-    <ref role="1XX52x" to="74e2:8omdT4CIk6" resolve="QuizUserFirstNameStartsWith" />
-    <node concept="3EZMnI" id="8omdT4CJxm" role="2wV5jI">
-      <node concept="3F0ifn" id="8omdT4EZi9" role="3EZMnx" />
-      <node concept="3F0ifn" id="8omdT4EZdl" role="3EZMnx" />
-      <node concept="2iRfu4" id="8omdT4CJxn" role="2iSdaV" />
-      <node concept="3F0ifn" id="8omdT4CJLl" role="3EZMnx">
-        <property role="3F0ifm" value="student first name starts with " />
-      </node>
-      <node concept="3F0A7n" id="8omdT4CKoz" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:8omdT4CIT7" resolve="from" />
-        <node concept="VechU" id="8omdT4E4UD" role="3F10Kt">
+        <node concept="VechU" id="27yxlZbihCH" role="3F10Kt">
           <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
-        <node concept="Vb9p2" id="8omdT4E51f" role="3F10Kt">
-          <property role="Vbekb" value="g1_k_vY/BOLD" />
-        </node>
       </node>
-      <node concept="3F0ifn" id="8omdT4CKtC" role="3EZMnx">
-        <property role="3F0ifm" value="to " />
-      </node>
-      <node concept="3F0A7n" id="8omdT4CKyK" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:8omdT4CJ1F" resolve="to" />
-        <node concept="VechU" id="8omdT4E58e" role="3F10Kt">
-          <property role="Vb096" value="g1_qRwE/darkGreen" />
-        </node>
-        <node concept="Vb9p2" id="8omdT4E5d_" role="3F10Kt">
-          <property role="Vbekb" value="g1_k_vY/BOLD" />
-        </node>
+      <node concept="3F0ifn" id="27yxlZbhq5$" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="8omdT4Ek9_">
-    <ref role="1XX52x" to="74e2:8omdT4Ej$x" resolve="QuizUserSecondNameStartsWith" />
-    <node concept="3EZMnI" id="8omdT4EkjT" role="2wV5jI">
-      <node concept="3F0ifn" id="8omdT4EYXu" role="3EZMnx" />
-      <node concept="3F0ifn" id="8omdT4EYU5" role="3EZMnx" />
-      <node concept="3F0ifn" id="8omdT4EkuE" role="3EZMnx">
-        <property role="3F0ifm" value="student second name starts with" />
+  <node concept="24kQdi" id="27yxlZbhsBk">
+    <ref role="1XX52x" to="74e2:2hUWFXPruqJ" resolve="QuizUsers" />
+    <node concept="3EZMnI" id="27yxlZbhsVg" role="2wV5jI">
+      <node concept="3EZMnI" id="27yxlZbhtbd" role="3EZMnx">
+        <node concept="2iRfu4" id="27yxlZbhtbe" role="2iSdaV" />
+        <node concept="3F0ifn" id="27yxlZbht4b" role="3EZMnx">
+          <property role="3F0ifm" value="set quiz users " />
+        </node>
+        <node concept="3F0ifn" id="27yxlZbhti3" role="3EZMnx">
+          <property role="3F0ifm" value="(" />
+        </node>
+        <node concept="3F0A7n" id="27yxlZbhtoF" role="3EZMnx">
+          <ref role="1NtTu8" to="74e2:27yxlZbhsgo" resolve="separator" />
+          <node concept="VechU" id="27yxlZbht_8" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5B/darkGray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="27yxlZbhtsT" role="3EZMnx">
+          <property role="3F0ifm" value=")" />
+        </node>
       </node>
-      <node concept="2iRfu4" id="8omdT4EkjU" role="2iSdaV" />
-      <node concept="3F0A7n" id="8omdT4Eke$" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:8omdT4Ej$y" resolve="from" />
-      </node>
-      <node concept="3F0ifn" id="8omdT4El2B" role="3EZMnx">
-        <property role="3F0ifm" value="to" />
-      </node>
-      <node concept="3F0A7n" id="8omdT4EliB" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:8omdT4Ej$z" resolve="to" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2hUWFXPrf7M">
-    <ref role="1XX52x" to="74e2:2hUWFXPreLr" resolve="QuizUsersAnd" />
-    <node concept="3EZMnI" id="2hUWFXPrf8C" role="2wV5jI">
-      <node concept="3F0ifn" id="2hUWFXPrf8D" role="3EZMnx">
-        <property role="3F0ifm" value="set quiz users (and)" />
-      </node>
-      <node concept="2iRkQZ" id="2hUWFXPrf8E" role="2iSdaV" />
-      <node concept="3EZMnI" id="2hUWFXPtgz6" role="3EZMnx">
-        <node concept="2iRkQZ" id="2hUWFXPtgz7" role="2iSdaV" />
-        <node concept="3F2HdR" id="2hUWFXPrfyQ" role="3EZMnx">
-          <property role="2czwfO" value=" and " />
+      <node concept="2iRkQZ" id="27yxlZbhsVi" role="2iSdaV" />
+      <node concept="3EZMnI" id="27yxlZbhsVj" role="3EZMnx">
+        <node concept="2iRkQZ" id="27yxlZbhsVk" role="2iSdaV" />
+        <node concept="3F2HdR" id="27yxlZbhsVl" role="3EZMnx">
           <ref role="1NtTu8" to="74e2:2hUWFXPruUV" resolve="QuizUser" />
-          <node concept="2iRkQZ" id="2hUWFXPuK96" role="2czzBx" />
-          <node concept="3EZMnI" id="2hUWFXPsW_A" role="2czzBI">
-            <node concept="2iRfu4" id="2hUWFXPsW_B" role="2iSdaV" />
-            <node concept="3F0ifn" id="2hUWFXPsWx5" role="3EZMnx" />
-            <node concept="3F0ifn" id="2hUWFXPsWFl" role="3EZMnx" />
-            <node concept="3F0ifn" id="2hUWFXPsWQm" role="3EZMnx">
+          <node concept="2iRkQZ" id="27yxlZbhsVm" role="2czzBx" />
+          <node concept="3EZMnI" id="27yxlZbhsVn" role="2czzBI">
+            <node concept="2iRfu4" id="27yxlZbhsVo" role="2iSdaV" />
+            <node concept="3F0ifn" id="27yxlZbhsVp" role="3EZMnx" />
+            <node concept="3F0ifn" id="27yxlZbhsVq" role="3EZMnx" />
+            <node concept="3F0ifn" id="27yxlZbhsVr" role="3EZMnx">
               <property role="3F0ifm" value="all course users" />
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2hUWFXPrhU9">
-    <ref role="1XX52x" to="74e2:2hUWFXPrgwa" resolve="QuizUsersOr" />
-    <node concept="3EZMnI" id="2hUWFXPrhUZ" role="2wV5jI">
-      <node concept="3F0ifn" id="2hUWFXPrhV0" role="3EZMnx">
-        <property role="3F0ifm" value="set quiz users (or)" />
-      </node>
-      <node concept="2iRkQZ" id="2hUWFXPrhV1" role="2iSdaV" />
-      <node concept="3EZMnI" id="2hUWFXPtgFi" role="3EZMnx">
-        <node concept="2iRkQZ" id="2hUWFXPtgFj" role="2iSdaV" />
-        <node concept="3F2HdR" id="2hUWFXPrhV4" role="3EZMnx">
-          <property role="2czwfO" value=" or " />
-          <ref role="1NtTu8" to="74e2:2hUWFXPruUV" resolve="QuizUser" />
-          <node concept="3EZMnI" id="2hUWFXPsXm5" role="2czzBI">
-            <node concept="2iRfu4" id="2hUWFXPsXm6" role="2iSdaV" />
-            <node concept="3F0ifn" id="2hUWFXPsXm7" role="3EZMnx" />
-            <node concept="3F0ifn" id="2hUWFXPsXm8" role="3EZMnx" />
-            <node concept="3F0ifn" id="2hUWFXPsXm9" role="3EZMnx">
-              <property role="3F0ifm" value="all course users" />
+          <node concept="2o9xnK" id="27yxlZbhu65" role="2gpyvW">
+            <node concept="3clFbS" id="27yxlZbhu66" role="2VODD2">
+              <node concept="3cpWs6" id="27yxlZbhv6C" role="3cqZAp">
+                <node concept="2OqwBi" id="27yxlZbhvs6" role="3cqZAk">
+                  <node concept="2OqwBi" id="27yxlZbhuyw" role="2Oq$k0">
+                    <node concept="pncrf" id="27yxlZbhuy0" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="27yxlZbhuV_" role="2OqNvi">
+                      <ref role="3TsBF5" to="74e2:27yxlZbhsgo" resolve="separator" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="27yxlZbhvX8" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
-          <node concept="2iRkQZ" id="2hUWFXPtthT" role="2czzBx" />
         </node>
       </node>
     </node>

@@ -1,49 +1,64 @@
 <moodleTests>  
   <moodleTest>    
-    <questionCategory>Eksamens</questionCategory>
-    <title>Eksamens 2023 1 variants</title>
+    <questionCategory>Default for Math</questionCategory>
+    <title>KD2 2023 1 veriants</title>
     <exercises>      
       <withSubname>        
-        <count>9</count>
+        <count>3</count>
+        <subname>EF querying data</subname>
+      </withSubname>
+      <withSubname>        
+        <count>1</count>
         <subname>LINQ</subname>
       </withSubname>
       <withSubname>        
-        <count>2</count>
-        <subname>EF</subname>
+        <count>1</count>
+        <subname>general</subname>
       </withSubname>
-      <withSubname>        
-        <count>3</count>
-        <subname>General</subname>
-      </withSubname>
-      
+      <withTag>        
+        <count>1</count>
+        <tag>writable</tag>
+      </withTag>
     </exercises>
-    
-    <quizUsers>      
-      
-      
+    <quizUsers separator="or">      
+      <quizUser searchField="username" condition="isequal">jb2</quizUser>
+      <quizUser searchField="username" condition="isequal">jb3</quizUser>
     </quizUsers>
+    <settings>      
+      <shuffle>true</shuffle>
+      <attempts>9</attempts>
+      <passgrade>4.0</passgrade>
+    </settings>
   </moodleTest>
   <moodleTest>    
-    <questionCategory>Eksamens</questionCategory>
-    <title>Eksamens 2023 2 variants</title>
+    <questionCategory>Default for Math</questionCategory>
+    <title>KD2 2023 2 variants</title>
     <exercises>      
       <withSubname>        
         <count>3</count>
+        <subname>EF querying data</subname>
+      </withSubname>
+      <withSubname>        
+        <count>1</count>
         <subname>LINQ</subname>
       </withSubname>
       <withSubname>        
-        <count>2</count>
-        <subname>EF</subname>
+        <count>1</count>
+        <subname>general</subname>
       </withSubname>
-      <withSubname>        
-        <count>3</count>
-        <subname>General</subname>
-      </withSubname>
-      
+      <withTag>        
+        <count>1</count>
+        <tag>writable</tag>
+      </withTag>
     </exercises>
-    
-    <quizUsers>      
-      
+    <quizUsers separator="or">      
+      <quizUser searchField="username" condition="isequal">jb4</quizUser>
+      <quizUser searchField="username" condition="isequal">jb1</quizUser>
     </quizUsers>
+    <settings>      
+      <shuffle>true</shuffle>
+      <attempts>unlimited</attempts>
+      <passgrade>4.0</passgrade>
+    </settings>
   </moodleTest>
 </moodleTests>

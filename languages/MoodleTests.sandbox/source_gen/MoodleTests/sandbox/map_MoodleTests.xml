@@ -1,31 +1,62 @@
 <moodleTests>  
   <moodleTest>    
-    <questionCategory></questionCategory>
-    <title></title>
-    <exercises></exercises>
-    <quizUsers separator="and">      
-      <userId>thht</userId>
-      <userId>fdf</userId>
+    <questionCategory>Default for Math</questionCategory>
+    <title>KD2 2023 1 veriants</title>
+    <exercises>      
+      <withSubname>        
+        <count>3</count>
+        <subname>EF querying data</subname>
+      </withSubname>
+      <withSubname>        
+        <count>1</count>
+        <subname>LINQ</subname>
+      </withSubname>
+      <withSubname>        
+        <count>1</count>
+        <subname>general</subname>
+      </withSubname>
+      <withTag>        
+        <count>1</count>
+        <tag>writable</tag>
+      </withTag>
+    </exercises>
+    <quizUsers separator="or">      
+      <quizUser searchField="username" condition="isequal">jb2</quizUser>
+      <quizUser searchField="username" condition="isequal">jb3</quizUser>
     </quizUsers>
     <settings>      
       <shuffle>true</shuffle>
-      <attempts>unlimited</attempts>
+      <attempts>9</attempts>
       <passgrade>4.0</passgrade>
     </settings>
   </moodleTest>
   <moodleTest>    
-    <questionCategory></questionCategory>
-    <title></title>
-    <exercises></exercises>
+    <questionCategory>Default for Math</questionCategory>
+    <title>KD2 2023 2 variants</title>
+    <exercises>      
+      <withSubname>        
+        <count>3</count>
+        <subname>EF querying data</subname>
+      </withSubname>
+      <withSubname>        
+        <count>1</count>
+        <subname>LINQ</subname>
+      </withSubname>
+      <withSubname>        
+        <count>1</count>
+        <subname>general</subname>
+      </withSubname>
+      <withTag>        
+        <count>1</count>
+        <tag>writable</tag>
+      </withTag>
+    </exercises>
     <quizUsers separator="or">      
-      <group>fdefe</group>
-      <secondnamestartswith>        
-        <from>d</from>
-        <to>d</to>
-      </secondnamestartswith>
+      <quizUser searchField="username" condition="isequal">jb4</quizUser>
+      <quizUser searchField="username" condition="isequal">jb1</quizUser>
     </quizUsers>
     <settings>      
-      <shuffle>false</shuffle>
+      <shuffle>true</shuffle>
       <attempts>unlimited</attempts>
       <passgrade>4.0</passgrade>
     </settings>

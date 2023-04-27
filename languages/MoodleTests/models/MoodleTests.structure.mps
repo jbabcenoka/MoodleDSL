@@ -12,6 +12,14 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -20,7 +28,6 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -150,15 +157,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="28Luuj7Ln3T">
-    <property role="EcuMT" value="2463884494659481849" />
-    <property role="TrG5h" value="QuizUserWithUsername" />
-    <property role="34LRSv" value="username" />
-    <ref role="1TJDcQ" node="8omdT4CDsp" resolve="QuizUser" />
-    <node concept="PrWs8" id="8omdT4CI08" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7IaxlwYeVzu">
     <property role="EcuMT" value="8902074227498924254" />
     <property role="TrG5h" value="Settings" />
@@ -194,92 +192,100 @@
     <property role="TrG5h" value="GradeType" />
     <property role="FLfZY" value="^(10(\\.00?)?|[0-9](\\.[0-9]{1,2})?)$" />
   </node>
-  <node concept="1TIwiD" id="8omdT4CDsp">
-    <property role="EcuMT" value="150968299174401817" />
-    <property role="TrG5h" value="QuizUser" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-  </node>
-  <node concept="1TIwiD" id="8omdT4CEPT">
-    <property role="EcuMT" value="150968299174407545" />
-    <property role="TrG5h" value="QuizUserGroup" />
-    <property role="34LRSv" value="for group" />
-    <ref role="1TJDcQ" node="8omdT4CDsp" resolve="QuizUser" />
-    <node concept="PrWs8" id="8omdT4CHE8" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="8omdT4CIk6">
-    <property role="EcuMT" value="150968299174421766" />
-    <property role="TrG5h" value="QuizUserFirstNameStartsWith" />
-    <property role="34LRSv" value="first name starts from" />
-    <ref role="1TJDcQ" node="8omdT4CDsp" resolve="QuizUser" />
-    <node concept="1TJgyi" id="8omdT4CIT7" role="1TKVEl">
-      <property role="IQ2nx" value="150968299174424135" />
-      <property role="TrG5h" value="from" />
-      <ref role="AX2Wp" node="8omdT4ElXk" resolve="Character" />
-    </node>
-    <node concept="1TJgyi" id="8omdT4CJ1F" role="1TKVEl">
-      <property role="IQ2nx" value="150968299174424683" />
-      <property role="TrG5h" value="to" />
-      <ref role="AX2Wp" node="8omdT4ElXk" resolve="Character" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="8omdT4Ej$x">
-    <property role="EcuMT" value="150968299174836513" />
-    <property role="TrG5h" value="QuizUserSecondNameStartsWith" />
-    <property role="34LRSv" value="second name starts from" />
-    <ref role="1TJDcQ" node="8omdT4CDsp" resolve="QuizUser" />
-    <node concept="1TJgyi" id="8omdT4Ej$y" role="1TKVEl">
-      <property role="IQ2nx" value="150968299174836514" />
-      <property role="TrG5h" value="from" />
-      <ref role="AX2Wp" node="8omdT4ElXk" resolve="Character" />
-    </node>
-    <node concept="1TJgyi" id="8omdT4Ej$z" role="1TKVEl">
-      <property role="IQ2nx" value="150968299174836515" />
-      <property role="TrG5h" value="to" />
-      <ref role="AX2Wp" node="8omdT4ElXk" resolve="Character" />
-    </node>
-  </node>
   <node concept="Az7Fb" id="8omdT4ElXk">
     <property role="3F6X1D" value="150968299174846292" />
     <property role="TrG5h" value="Character" />
     <property role="FLfZY" value="^[a-zA-Z]{1,30}$" />
   </node>
-  <node concept="1TIwiD" id="2hUWFXPreLr">
-    <property role="EcuMT" value="2628680236646853723" />
-    <property role="TrG5h" value="QuizUsersAnd" />
-    <property role="34LRSv" value="users separated by and" />
-    <ref role="1TJDcQ" node="2hUWFXPruqJ" resolve="QuizUsers" />
-  </node>
-  <node concept="1TIwiD" id="2hUWFXPrgwa">
-    <property role="EcuMT" value="2628680236646860810" />
-    <property role="TrG5h" value="QuizUsersOr" />
-    <property role="34LRSv" value="users separated by or" />
-    <ref role="1TJDcQ" node="2hUWFXPruqJ" resolve="QuizUsers" />
-  </node>
   <node concept="1TIwiD" id="2hUWFXPruqJ">
     <property role="EcuMT" value="2628680236646917807" />
     <property role="TrG5h" value="QuizUsers" />
-    <property role="R5$K7" value="true" />
+    <property role="34LRSv" value="students" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="2hUWFXPruUV" role="1TKVEi">
       <property role="IQ2ns" value="2628680236646919867" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="QuizUser" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="8omdT4CDsp" resolve="QuizUser" />
+      <ref role="20lvS9" node="27yxlZbg3QV" resolve="QuizUser" />
     </node>
-    <node concept="1TJgyi" id="2hUWFXPr_mB" role="1TKVEl">
-      <property role="IQ2nx" value="2628680236646946215" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyi" id="27yxlZbhsgo" role="1TKVEl">
+      <property role="IQ2nx" value="2441660594466964504" />
+      <property role="TrG5h" value="separator" />
+      <ref role="AX2Wp" node="27yxlZbhslj" resolve="QuizUserSeparator" />
     </node>
   </node>
-  <node concept="Az7Fb" id="2hUWFXPtB0f">
-    <property role="3F6X1D" value="2628680236647477263" />
-    <property role="TrG5h" value="NotEmptyString" />
-    <property role="FLfZY" value="^.+$" />
+  <node concept="1TIwiD" id="27yxlZbg3QV">
+    <property role="EcuMT" value="2441660594466602427" />
+    <property role="TrG5h" value="QuizUser" />
+    <property role="34LRSv" value="quiz user" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="27yxlZbg3Z5" role="1TKVEl">
+      <property role="IQ2nx" value="2441660594466602949" />
+      <property role="TrG5h" value="field" />
+      <ref role="AX2Wp" node="27yxlZbg4sr" resolve="QuizUserField" />
+    </node>
+    <node concept="1TJgyi" id="27yxlZbg48R" role="1TKVEl">
+      <property role="IQ2nx" value="2441660594466603575" />
+      <property role="TrG5h" value="condition" />
+      <ref role="AX2Wp" node="27yxlZbg4$l" resolve="QuizUserCondition" />
+    </node>
+    <node concept="PrWs8" id="27yxlZbg5fW" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="25R3W" id="27yxlZbg4sr">
+    <property role="3F6X1D" value="2441660594466604827" />
+    <property role="TrG5h" value="QuizUserFieldEnum" />
+    <ref role="1H5jkz" node="27yxlZbg4ss" resolve="username" />
+    <node concept="25R33" id="27yxlZbg4ss" role="25R1y">
+      <property role="3tVfz5" value="2441660594466604828" />
+      <property role="TrG5h" value="username" />
+      <property role="1L1pqM" value="username" />
+    </node>
+    <node concept="25R33" id="27yxlZbg4st" role="25R1y">
+      <property role="3tVfz5" value="2441660594466604829" />
+      <property role="TrG5h" value="firstname" />
+      <property role="1L1pqM" value="first name" />
+    </node>
+    <node concept="25R33" id="27yxlZbg4sw" role="25R1y">
+      <property role="3tVfz5" value="2441660594466604832" />
+      <property role="TrG5h" value="lastname" />
+      <property role="1L1pqM" value="last name" />
+    </node>
+  </node>
+  <node concept="25R3W" id="27yxlZbg4$l">
+    <property role="3F6X1D" value="2441660594466605333" />
+    <property role="TrG5h" value="QuizUserConditionEnum" />
+    <ref role="1H5jkz" node="27yxlZbg4$o" resolve="isEqual" />
+    <node concept="25R33" id="27yxlZbg4$o" role="25R1y">
+      <property role="3tVfz5" value="2441660594466605336" />
+      <property role="TrG5h" value="isequalto" />
+      <property role="1L1pqM" value="is equal" />
+    </node>
+    <node concept="25R33" id="27yxlZbhgFJ" role="25R1y">
+      <property role="3tVfz5" value="2441660594466917103" />
+      <property role="TrG5h" value="contains" />
+      <property role="1L1pqM" value="contains" />
+    </node>
+    <node concept="25R33" id="27yxlZbhgFN" role="25R1y">
+      <property role="3tVfz5" value="2441660594466917107" />
+      <property role="TrG5h" value="startswith" />
+      <property role="1L1pqM" value="starts with" />
+    </node>
+  </node>
+  <node concept="25R3W" id="27yxlZbhslj">
+    <property role="3F6X1D" value="2441660594466964819" />
+    <property role="TrG5h" value="QuizUserSeparatorEnum" />
+    <ref role="1H5jkz" node="27yxlZbhslk" resolve="or" />
+    <node concept="25R33" id="27yxlZbhslk" role="25R1y">
+      <property role="3tVfz5" value="2441660594466964820" />
+      <property role="TrG5h" value="or" />
+    </node>
+    <node concept="25R33" id="27yxlZbhsll" role="25R1y">
+      <property role="3tVfz5" value="2441660594466964821" />
+      <property role="TrG5h" value="and" />
+    </node>
   </node>
 </model>
 
