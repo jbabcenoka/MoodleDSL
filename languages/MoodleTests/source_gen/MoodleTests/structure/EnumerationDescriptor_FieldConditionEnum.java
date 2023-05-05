@@ -9,10 +9,10 @@ import java.util.List;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.NotNull;
 
-public class EnumerationDescriptor_QuizUserConditionEnum extends EnumerationDescriptorBase {
+public class EnumerationDescriptor_FieldConditionEnum extends EnumerationDescriptorBase {
 
-  public EnumerationDescriptor_QuizUserConditionEnum() {
-    super(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21e2855fcb404915L, "QuizUserConditionEnum", "r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2441660594466605333");
+  public EnumerationDescriptor_FieldConditionEnum() {
+    super(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21e2855fcb404915L, "FieldConditionEnum", "r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2441660594466605333");
   }
 
   private final EnumerationDescriptor.MemberDescriptor myMember_isequalto_0 = new EnumerationDescriptor.MemberDescriptor("isequalto", "is equal", 0x21e2855fcb404918L, "r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2441660594466605336");

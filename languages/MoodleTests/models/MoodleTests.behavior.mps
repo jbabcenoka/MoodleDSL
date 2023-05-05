@@ -46,7 +46,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="8omdT4AeRe">
-    <ref role="13h7C2" to="74e2:7IaxlwYeVzu" resolve="Settings" />
+    <ref role="13h7C2" to="74e2:7IaxlwYeVzu" resolve="SettingsBlock" />
     <node concept="13hLZK" id="8omdT4AeRf" role="13h7CW">
       <node concept="3clFbS" id="8omdT4AeRg" role="2VODD2">
         <node concept="3clFbF" id="8omdT4AeRy" role="3cqZAp">
@@ -88,10 +88,10 @@
       <node concept="3clFbS" id="8omdT4CwEX" role="2VODD2">
         <node concept="3clFbF" id="8omdT4CwJj" role="3cqZAp">
           <node concept="2OqwBi" id="8omdT4CxUJ" role="3clFbG">
-            <node concept="2OqwBi" id="8omdT4CwSP" role="2Oq$k0">
+            <node concept="2OqwBi" id="5JFnmYV3kgT" role="2Oq$k0">
               <node concept="13iPFW" id="8omdT4CwJi" role="2Oq$k0" />
-              <node concept="3TrcHB" id="8omdT4Cxa0" role="2OqNvi">
-                <ref role="3TsBF5" to="74e2:28Luuj7Lgen" resolve="count" />
+              <node concept="3TrcHB" id="5JFnmYV3ktf" role="2OqNvi">
+                <ref role="3TsBF5" to="74e2:5JFnmYV2Lrz" resolve="count" />
               </node>
             </node>
             <node concept="tyxLq" id="8omdT4Cyig" role="2OqNvi">
@@ -110,10 +110,10 @@
       <node concept="3clFbS" id="8omdT4CyNw" role="2VODD2">
         <node concept="3clFbF" id="8omdT4CyP0" role="3cqZAp">
           <node concept="2OqwBi" id="8omdT4C$8i" role="3clFbG">
-            <node concept="2OqwBi" id="8omdT4CyYy" role="2Oq$k0">
+            <node concept="2OqwBi" id="5JFnmYV3kK5" role="2Oq$k0">
               <node concept="13iPFW" id="8omdT4CyOZ" role="2Oq$k0" />
-              <node concept="3TrcHB" id="8omdT4CzfH" role="2OqNvi">
-                <ref role="3TsBF5" to="74e2:28Luuj7Lf$O" resolve="count" />
+              <node concept="3TrcHB" id="5JFnmYV3l6d" role="2OqNvi">
+                <ref role="3TsBF5" to="74e2:5JFnmYV2Lrz" resolve="count" />
               </node>
             </node>
             <node concept="tyxLq" id="8omdT4C$vF" role="2OqNvi">

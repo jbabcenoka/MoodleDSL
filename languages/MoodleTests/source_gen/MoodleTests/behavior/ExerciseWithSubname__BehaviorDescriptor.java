@@ -23,7 +23,7 @@ public final class ExerciseWithSubname__BehaviorDescriptor extends BaseBHDescrip
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, PROPS.count$g7Tm, "1");
+    SPropertyOperations.set(__thisNode__, PROPS.count$W84w, "1");
   }
 
 
@@ -72,6 +72,6 @@ public final class ExerciseWithSubname__BehaviorDescriptor extends BaseBHDescrip
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty count$g7Tm = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4ff1eL, 0x223179e4c7c50397L, "count");
+    /*package*/ static final SProperty count$W84w = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5beb5d6fbb0b1281L, 0x5beb5d6fbb0b16e3L, "count");
   }
 }

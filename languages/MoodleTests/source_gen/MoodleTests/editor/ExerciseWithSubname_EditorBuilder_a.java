@@ -79,7 +79,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.count$g7Tm;
+      final SProperty property = PROPS.count$W84w;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
       editorCell.setDefaultText("<no count>");
@@ -150,7 +150,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty count$g7Tm = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4ff1eL, 0x223179e4c7c50397L, "count");
+    /*package*/ static final SProperty count$W84w = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5beb5d6fbb0b1281L, 0x5beb5d6fbb0b16e3L, "count");
     /*package*/ static final SProperty subname$_8fE = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4ff1eL, 0x223179e4c7c504ebL, "subname");
   }
 

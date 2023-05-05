@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class QuizUsers_Editor extends DefaultNodeEditor {
+public class UsersBlock_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new QuizUsers_EditorBuilder_a(editorContext, node).createCell();
+    return new UsersBlock_EditorBuilder_a(editorContext, node).createCell();
   }
 }

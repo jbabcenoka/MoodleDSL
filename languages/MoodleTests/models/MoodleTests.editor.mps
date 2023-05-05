@@ -5,6 +5,8 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -189,7 +191,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="28Luuj7JLfR">
-    <ref role="1XX52x" to="74e2:28Luuj7JK4e" resolve="MoodleTests" />
+    <ref role="1XX52x" to="74e2:28Luuj7JK4e" resolve="QuizesBlock" />
     <node concept="3EZMnI" id="28Luuj7KInM" role="2wV5jI">
       <node concept="3F0ifn" id="28Luuj7KJ1V" role="3EZMnx">
         <property role="3F0ifm" value="Create new quizes" />
@@ -202,7 +204,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="28Luuj7KnJS">
-    <ref role="1XX52x" to="74e2:5GF9IbDtlv$" resolve="MoodleTest" />
+    <ref role="1XX52x" to="74e2:5GF9IbDtlv$" resolve="Quiz" />
     <node concept="3EZMnI" id="28Luuj7KJHv" role="2wV5jI">
       <node concept="35HoNQ" id="28Luuj7MwbP" role="3EZMnx" />
       <node concept="3F0ifn" id="28Luuj7MEyw" role="3EZMnx">
@@ -255,7 +257,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="28Luuj7LkGn">
-    <ref role="1XX52x" to="74e2:5GF9IbDtLzh" resolve="Exercises" />
+    <ref role="1XX52x" to="74e2:5GF9IbDtLzh" resolve="ExercisesBlock" />
     <node concept="3EZMnI" id="28Luuj7LkLI" role="2wV5jI">
       <node concept="3F0ifn" id="28Luuj7LkVb" role="3EZMnx">
         <property role="3F0ifm" value="inlude random exercises" />
@@ -299,7 +301,7 @@
       <node concept="3F0ifn" id="7IaxlwYgIXW" role="3EZMnx" />
       <node concept="3F0ifn" id="7IaxlwYg9HM" role="3EZMnx" />
       <node concept="3F0A7n" id="7IaxlwYeKql" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:28Luuj7Lgen" resolve="count" />
+        <ref role="1NtTu8" to="74e2:5JFnmYV2Lrz" resolve="count" />
         <node concept="VechU" id="7IaxlwYfckd" role="3F10Kt">
           <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
@@ -331,7 +333,7 @@
       <node concept="3F0ifn" id="7IaxlwYgJem" role="3EZMnx" />
       <node concept="3F0ifn" id="7IaxlwYgJ75" role="3EZMnx" />
       <node concept="3F0A7n" id="7IaxlwYeKuu" role="3EZMnx">
-        <ref role="1NtTu8" to="74e2:28Luuj7Lf$O" resolve="count" />
+        <ref role="1NtTu8" to="74e2:5JFnmYV2Lrz" resolve="count" />
         <node concept="VechU" id="7IaxlwYfcAa" role="3F10Kt">
           <property role="Vb096" value="g1_eI4o/darkBlue" />
         </node>
@@ -358,7 +360,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7IaxlwYf5YC">
-    <ref role="1XX52x" to="74e2:7IaxlwYeVzu" resolve="Settings" />
+    <ref role="1XX52x" to="74e2:7IaxlwYeVzu" resolve="SettingsBlock" />
     <node concept="3EZMnI" id="7IaxlwYf5Z6" role="2wV5jI">
       <node concept="3F0ifn" id="7IaxlwYf82h" role="3EZMnx">
         <property role="3F0ifm" value="with settings" />
@@ -531,7 +533,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="27yxlZbg5pJ">
-    <ref role="1XX52x" to="74e2:27yxlZbg3QV" resolve="QuizUser" />
+    <ref role="1XX52x" to="74e2:27yxlZbg3QV" resolve="User" />
     <node concept="3EZMnI" id="27yxlZbg5_e" role="2wV5jI">
       <node concept="2iRfu4" id="27yxlZbg5_f" role="2iSdaV" />
       <node concept="3F0ifn" id="27yxlZbg6Bv" role="3EZMnx" />
@@ -563,7 +565,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="27yxlZbhsBk">
-    <ref role="1XX52x" to="74e2:2hUWFXPruqJ" resolve="QuizUsers" />
+    <ref role="1XX52x" to="74e2:2hUWFXPruqJ" resolve="UsersBlock" />
     <node concept="3EZMnI" id="27yxlZbhsVg" role="2wV5jI">
       <node concept="3EZMnI" id="27yxlZbhtbd" role="3EZMnx">
         <node concept="2iRfu4" id="27yxlZbhtbe" role="2iSdaV" />

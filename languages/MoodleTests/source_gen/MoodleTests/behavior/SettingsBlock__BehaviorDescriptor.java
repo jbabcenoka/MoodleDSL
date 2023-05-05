@@ -16,8 +16,8 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
 
-public final class Settings__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e3bb8deL, "MoodleTests.structure.Settings");
+public final class SettingsBlock__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x7b8a85583e3bb8deL, "MoodleTests.structure.SettingsBlock");
 
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
@@ -28,7 +28,7 @@ public final class Settings__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
 
-  /*package*/ Settings__BehaviorDescriptor() {
+  /*package*/ SettingsBlock__BehaviorDescriptor() {
   }
 
   @Override

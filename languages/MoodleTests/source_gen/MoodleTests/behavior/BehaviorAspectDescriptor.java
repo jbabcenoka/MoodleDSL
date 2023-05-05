@@ -14,7 +14,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myExerciseWithTag__BehaviorDescriptor = new ExerciseWithTag__BehaviorDescriptor();
   private final BHDescriptor myExerciseWithSubname__BehaviorDescriptor = new ExerciseWithSubname__BehaviorDescriptor();
-  private final BHDescriptor mySettings__BehaviorDescriptor = new Settings__BehaviorDescriptor();
+  private final BHDescriptor mySettingsBlock__BehaviorDescriptor = new SettingsBlock__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
@@ -28,7 +28,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 1:
         return myExerciseWithTag__BehaviorDescriptor;
       case 2:
-        return mySettings__BehaviorDescriptor;
+        return mySettingsBlock__BehaviorDescriptor;
       default:
     }
     return null;

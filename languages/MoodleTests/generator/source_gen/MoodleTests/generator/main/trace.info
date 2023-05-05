@@ -6,12 +6,12 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="244,0,253,0" name="MoodleTests.generator.main.QueriesGenerated$LINKS" />
-      <unit at="228,0,243,0" name="MoodleTests.generator.main.QueriesGenerated$PROPS" />
+      <unit at="243,0,252,0" name="MoodleTests.generator.main.QueriesGenerated$LINKS" />
+      <unit at="228,0,242,0" name="MoodleTests.generator.main.QueriesGenerated$PROPS" />
       <unit at="110,0,129,0" name="MoodleTests.generator.main.QueriesGenerated$SNQ" />
       <unit at="143,0,164,0" name="MoodleTests.generator.main.QueriesGenerated$SNsQ" />
       <unit at="187,0,227,0" name="MoodleTests.generator.main.QueriesGenerated$PVQ" />
-      <unit at="29,0,254,0" name="MoodleTests.generator.main.QueriesGenerated" />
+      <unit at="29,0,253,0" name="MoodleTests.generator.main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:f1159392-d393-49f4-8db4-b008cc388ca3(MoodleTests.generator.main@generator)/2441660594466920177">

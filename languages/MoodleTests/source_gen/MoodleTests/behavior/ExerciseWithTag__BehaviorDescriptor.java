@@ -23,7 +23,7 @@ public final class ExerciseWithTag__BehaviorDescriptor extends BaseBHDescriptor 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.set(__thisNode__, PROPS.count$8IhV, "1");
+    SPropertyOperations.set(__thisNode__, PROPS.count$W84w, "1");
   }
 
 
@@ -72,6 +72,6 @@ public final class ExerciseWithTag__BehaviorDescriptor extends BaseBHDescriptor 
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty count$8IhV = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x223179e4c7c4f2a6L, 0x223179e4c7c4f934L, "count");
+    /*package*/ static final SProperty count$W84w = MetaAdapterFactory.getProperty(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5beb5d6fbb0b1281L, 0x5beb5d6fbb0b16e3L, "count");
   }
 }

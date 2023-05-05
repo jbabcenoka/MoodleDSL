@@ -42,11 +42,11 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class MoodleTest_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class Quiz_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public MoodleTest_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public Quiz_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -63,7 +63,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
-    editorCell.setCellId("Collection_xbdhf9_a");
+    editorCell.setCellId("Collection_6onex7_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createEmpty_0());
@@ -79,12 +79,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Empty editorCell = new EditorCell_Empty(getEditorContext(), myNode);
     editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.FORWARD));
     editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.BACKWARD));
-    editorCell.setCellId("Empty_xbdhf9_a0");
+    editorCell.setCellId("Empty_6onex7_a0");
     return editorCell;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "new quiz");
-    editorCell.setCellId("Constant_xbdhf9_b0");
+    editorCell.setCellId("Constant_6onex7_b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_BLUE));
     editorCell.getStyle().putAll(style);
@@ -93,7 +93,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_xbdhf9_c0");
+    editorCell.setCellId("Collection_6onex7_c0");
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createConstant_2());
@@ -101,7 +101,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "set question category \"");
-    editorCell.setCellId("Constant_xbdhf9_a2a");
+    editorCell.setCellId("Constant_6onex7_a2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -135,13 +135,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "\"");
-    editorCell.setCellId("Constant_xbdhf9_c2a");
+    editorCell.setCellId("Constant_6onex7_c2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createCollection_2() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_xbdhf9_d0");
+    editorCell.setCellId("Collection_6onex7_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -152,7 +152,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "set title \"");
-    editorCell.setCellId("Constant_xbdhf9_a3a");
+    editorCell.setCellId("Constant_6onex7_a3a");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -186,19 +186,19 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_4() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "\"");
-    editorCell.setCellId("Constant_xbdhf9_c3a");
+    editorCell.setCellId("Constant_6onex7_c3a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new ExercisesSingleRoleHandler_xbdhf9_e0(myNode, LINKS.Exercises$rPHa, getEditorContext());
+    SingleRoleCellProvider provider = new ExercisesSingleRoleHandler_6onex7_e0(myNode, LINKS.Exercises$rPHa, getEditorContext());
     return provider.createCell();
   }
-  private static class ExercisesSingleRoleHandler_xbdhf9_e0 extends SingleRoleCellProvider {
+  private static class ExercisesSingleRoleHandler_6onex7_e0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public ExercisesSingleRoleHandler_xbdhf9_e0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public ExercisesSingleRoleHandler_6onex7_e0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -246,14 +246,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new QuizUsersSingleRoleHandler_xbdhf9_f0(myNode, LINKS.QuizUsers$5AAf, getEditorContext());
+    SingleRoleCellProvider provider = new QuizUsersSingleRoleHandler_6onex7_f0(myNode, LINKS.QuizUsers$5AAf, getEditorContext());
     return provider.createCell();
   }
-  private static class QuizUsersSingleRoleHandler_xbdhf9_f0 extends SingleRoleCellProvider {
+  private static class QuizUsersSingleRoleHandler_6onex7_f0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public QuizUsersSingleRoleHandler_xbdhf9_f0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public QuizUsersSingleRoleHandler_6onex7_f0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -301,14 +301,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createRefNode_2() {
-    SingleRoleCellProvider provider = new SettingsSingleRoleHandler_xbdhf9_g0(myNode, LINKS.Settings$1DJd, getEditorContext());
+    SingleRoleCellProvider provider = new SettingsSingleRoleHandler_6onex7_g0(myNode, LINKS.Settings$1DJd, getEditorContext());
     return provider.createCell();
   }
-  private static class SettingsSingleRoleHandler_xbdhf9_g0 extends SingleRoleCellProvider {
+  private static class SettingsSingleRoleHandler_6onex7_g0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public SettingsSingleRoleHandler_xbdhf9_g0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public SettingsSingleRoleHandler_6onex7_g0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

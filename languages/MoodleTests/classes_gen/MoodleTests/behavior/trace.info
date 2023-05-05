@@ -16,7 +16,7 @@
     </file>
   </root>
   <root nodeRef="r:b9773c3f-8838-4b4f-b1ca-db31b63e78e7(MoodleTests.behavior)/150968299173768654">
-    <file name="Settings__BehaviorDescriptor.java">
+    <file name="SettingsBlock__BehaviorDescriptor.java">
       <node id="150968299173768654" at="20,0,21,0" concept="6" trace="CONCEPT" />
       <node id="150968299173768654" at="23,0,24,0" concept="6" trace="BH_METHODS" />
       <node id="150968299173768674" at="25,63,26,76" concept="1" />
@@ -32,7 +32,7 @@
       <node id="150968299173768654" at="71,40,72,19" concept="5" />
       <node id="150968299173768654" at="76,0,77,0" concept="6" trace="attempts$scBu" />
       <node id="150968299173768654" at="77,0,78,0" concept="6" trace="passgrade$Trw7" />
-      <node id="150968299173768654" at="31,0,33,0" concept="0" trace="Settings__BehaviorDescriptor#()V" />
+      <node id="150968299173768654" at="31,0,33,0" concept="0" trace="SettingsBlock__BehaviorDescriptor#()V" />
       <node id="150968299173768654" at="41,49,44,5" concept="2" />
       <node id="150968299173768654" at="53,49,56,5" concept="2" />
       <node id="150968299173768654" at="25,0,29,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -43,7 +43,7 @@
       <node id="150968299173768654" at="69,0,74,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="150968299173768654" at="39,0,50,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
       <node id="150968299173768654" at="51,0,62,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="150968299173768654" at="31,46,31,46" />
+      <scope id="150968299173768654" at="31,51,31,51" />
       <scope id="150968299173768654" at="35,114,36,21" />
       <scope id="150968299173768654" at="42,26,43,56" />
       <scope id="150968299173768654" at="46,14,47,58" />
@@ -79,8 +79,8 @@
         <var name="method" id="150968299173768654" />
         <var name="parameters" id="150968299173768654" />
       </scope>
-      <unit id="150968299173768654" at="75,0,79,0" name="MoodleTests.behavior.Settings__BehaviorDescriptor$PROPS" />
-      <unit id="150968299173768654" at="19,0,80,0" name="MoodleTests.behavior.Settings__BehaviorDescriptor" />
+      <unit id="150968299173768654" at="75,0,79,0" name="MoodleTests.behavior.SettingsBlock__BehaviorDescriptor$PROPS" />
+      <unit id="150968299173768654" at="19,0,80,0" name="MoodleTests.behavior.SettingsBlock__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:b9773c3f-8838-4b4f-b1ca-db31b63e78e7(MoodleTests.behavior)/150968299174365883">
@@ -97,7 +97,7 @@
       <node id="150968299174365883" at="57,14,58,58" concept="9" />
       <node id="150968299174365883" at="64,48,65,22" concept="5" />
       <node id="150968299174365883" at="70,40,71,19" concept="5" />
-      <node id="150968299174365883" at="75,0,76,0" concept="6" trace="count$g7Tm" />
+      <node id="150968299174365883" at="75,0,76,0" concept="6" trace="count$W84w" />
       <node id="150968299174365883" at="30,0,32,0" concept="0" trace="ExerciseWithSubname__BehaviorDescriptor#()V" />
       <node id="150968299174365883" at="25,0,28,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="150968299174365883" at="40,49,43,5" concept="2" />
@@ -163,7 +163,7 @@
       <node id="150968299174374622" at="57,14,58,58" concept="9" />
       <node id="150968299174374622" at="64,48,65,22" concept="5" />
       <node id="150968299174374622" at="70,40,71,19" concept="5" />
-      <node id="150968299174374622" at="75,0,76,0" concept="6" trace="count$8IhV" />
+      <node id="150968299174374622" at="75,0,76,0" concept="6" trace="count$W84w" />
       <node id="150968299174374622" at="30,0,32,0" concept="0" trace="ExerciseWithTag__BehaviorDescriptor#()V" />
       <node id="150968299174374622" at="25,0,28,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="150968299174374622" at="40,49,43,5" concept="2" />

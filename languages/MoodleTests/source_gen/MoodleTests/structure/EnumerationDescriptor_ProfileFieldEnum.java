@@ -9,10 +9,10 @@ import java.util.List;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.NotNull;
 
-public class EnumerationDescriptor_QuizUserFieldEnum extends EnumerationDescriptorBase {
+public class EnumerationDescriptor_ProfileFieldEnum extends EnumerationDescriptorBase {
 
-  public EnumerationDescriptor_QuizUserFieldEnum() {
-    super(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21e2855fcb40471bL, "QuizUserFieldEnum", "r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2441660594466604827");
+  public EnumerationDescriptor_ProfileFieldEnum() {
+    super(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x21e2855fcb40471bL, "ProfileFieldEnum", "r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2441660594466604827");
   }
 
   private final EnumerationDescriptor.MemberDescriptor myMember_username_0 = new EnumerationDescriptor.MemberDescriptor("username", "username", 0x21e2855fcb40471cL, "r:ac90c03e-a5f2-4acd-af46-01188a354211(MoodleTests.structure)/2441660594466604828");

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="ad7nji3c3m4n0t1mrsq74rzzy9ae3ey">
-  <files names="EditorAspectDescriptorImpl.java:ExerciseWithSubname_Editor.java:ExerciseWithSubname_EditorBuilder_a.java:ExerciseWithTag_Editor.java:ExerciseWithTag_EditorBuilder_a.java:Exercises_Editor.java:Exercises_EditorBuilder_a.java:MoodleTest_Editor.java:MoodleTest_EditorBuilder_a.java:MoodleTests_Editor.java:MoodleTests_EditorBuilder_a.java:QuizUser_Editor.java:QuizUser_EditorBuilder_a.java:QuizUsers_Editor.java:QuizUsers_EditorBuilder_a.java:Settings_Editor.java:Settings_EditorBuilder_a.java" />
+<product version="3" modelHash="-eta86b7u00pyl13pvsvbanddz332s4r">
+  <files names="EditorAspectDescriptorImpl.java:ExerciseWithSubname_Editor.java:ExerciseWithSubname_EditorBuilder_a.java:ExerciseWithTag_Editor.java:ExerciseWithTag_EditorBuilder_a.java:ExercisesBlock_Editor.java:ExercisesBlock_EditorBuilder_a.java:Quiz_Editor.java:Quiz_EditorBuilder_a.java:QuizesBlock_Editor.java:QuizesBlock_EditorBuilder_a.java:SettingsBlock_Editor.java:SettingsBlock_EditorBuilder_a.java:User_Editor.java:User_EditorBuilder_a.java:UsersBlock_Editor.java:UsersBlock_EditorBuilder_a.java" />
 </product>
 

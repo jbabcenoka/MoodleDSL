@@ -18,18 +18,18 @@
     </file>
   </root>
   <root nodeRef="r:1093a065-2257-4f5b-9469-f45c45d6bdc5(MoodleTests.editor)/2441660594466608751">
-    <file name="QuizUser_Editor.java">
-      <node id="2441660594466608751" at="11,79,12,74" concept="7" />
+    <file name="User_Editor.java">
+      <node id="2441660594466608751" at="11,79,12,70" concept="7" />
       <node id="2441660594466608751" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2441660594466608751" at="11,79,12,74" />
+      <scope id="2441660594466608751" at="11,79,12,70" />
       <scope id="2441660594466608751" at="11,0,14,0">
         <var name="editorContext" id="2441660594466608751" />
         <var name="node" id="2441660594466608751" />
       </scope>
-      <unit id="2441660594466608751" at="10,0,15,0" name="MoodleTests.editor.QuizUser_Editor" />
+      <unit id="2441660594466608751" at="10,0,15,0" name="MoodleTests.editor.User_Editor" />
     </file>
-    <file name="QuizUser_EditorBuilder_a.java">
-      <node id="2441660594466608751" at="39,88,40,19" concept="10" />
+    <file name="User_EditorBuilder_a.java">
+      <node id="2441660594466608751" at="39,84,40,19" concept="10" />
       <node id="2441660594466608751" at="40,19,41,18" concept="2" />
       <node id="2441660594466608751" at="46,26,47,18" concept="7" />
       <node id="2441660594466608751" at="50,39,51,32" concept="7" />
@@ -123,7 +123,7 @@
       <node id="2441660594466610042" at="99,0,102,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="2441660594466611460" at="127,0,130,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="2441660594466612283" at="161,0,164,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="2441660594466608751" at="39,0,43,0" concept="1" trace="QuizUser_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2441660594466608751" at="39,0,43,0" concept="1" trace="User_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2441660594466608751" at="44,0,49,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2441660594466610042" at="97,155,102,9" concept="6" />
       <node id="2441660594466610042" at="102,9,107,24" concept="4" />
@@ -151,7 +151,7 @@
       <scope id="2441660594466611460" at="136,15,137,40" />
       <scope id="2441660594466612283" at="161,41,162,118" />
       <scope id="2441660594466612283" at="170,15,171,40" />
-      <scope id="2441660594466608751" at="39,88,41,18" />
+      <scope id="2441660594466608751" at="39,84,41,18" />
       <scope id="2441660594466610042" at="103,74,105,145">
         <var name="manager" id="2441660594466610042" />
       </scope>
@@ -226,27 +226,27 @@
       <scope id="2441660594466612283" at="146,41,172,5" />
       <scope id="2441660594466611460" at="112,0,140,0" />
       <scope id="2441660594466612283" at="146,0,174,0" />
-      <unit id="2441660594466608751" at="187,0,190,0" name="MoodleTests.editor.QuizUser_EditorBuilder_a$CONCEPTS" />
-      <unit id="2441660594466610042" at="98,102,102,7" name="MoodleTests.editor.QuizUser_EditorBuilder_a$1" />
-      <unit id="2441660594466611460" at="126,102,130,7" name="MoodleTests.editor.QuizUser_EditorBuilder_a$2" />
-      <unit id="2441660594466612283" at="160,102,164,7" name="MoodleTests.editor.QuizUser_EditorBuilder_a$3" />
-      <unit id="2441660594466608751" at="181,0,186,0" name="MoodleTests.editor.QuizUser_EditorBuilder_a$PROPS" />
-      <unit id="2441660594466608751" at="35,0,191,0" name="MoodleTests.editor.QuizUser_EditorBuilder_a" />
+      <unit id="2441660594466608751" at="187,0,190,0" name="MoodleTests.editor.User_EditorBuilder_a$CONCEPTS" />
+      <unit id="2441660594466610042" at="98,102,102,7" name="MoodleTests.editor.User_EditorBuilder_a$1" />
+      <unit id="2441660594466611460" at="126,102,130,7" name="MoodleTests.editor.User_EditorBuilder_a$2" />
+      <unit id="2441660594466612283" at="160,102,164,7" name="MoodleTests.editor.User_EditorBuilder_a$3" />
+      <unit id="2441660594466608751" at="181,0,186,0" name="MoodleTests.editor.User_EditorBuilder_a$PROPS" />
+      <unit id="2441660594466608751" at="35,0,191,0" name="MoodleTests.editor.User_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:1093a065-2257-4f5b-9469-f45c45d6bdc5(MoodleTests.editor)/2441660594466965972">
-    <file name="QuizUsers_Editor.java">
-      <node id="2441660594466965972" at="11,79,12,75" concept="7" />
+    <file name="UsersBlock_Editor.java">
+      <node id="2441660594466965972" at="11,79,12,76" concept="7" />
       <node id="2441660594466965972" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2441660594466965972" at="11,79,12,75" />
+      <scope id="2441660594466965972" at="11,79,12,76" />
       <scope id="2441660594466965972" at="11,0,14,0">
         <var name="editorContext" id="2441660594466965972" />
         <var name="node" id="2441660594466965972" />
       </scope>
-      <unit id="2441660594466965972" at="10,0,15,0" name="MoodleTests.editor.QuizUsers_Editor" />
+      <unit id="2441660594466965972" at="10,0,15,0" name="MoodleTests.editor.UsersBlock_Editor" />
     </file>
-    <file name="QuizUsers_EditorBuilder_a.java">
-      <node id="2441660594466965972" at="50,89,51,19" concept="10" />
+    <file name="UsersBlock_EditorBuilder_a.java">
+      <node id="2441660594466965972" at="50,90,51,19" concept="10" />
       <node id="2441660594466965972" at="51,19,52,18" concept="2" />
       <node id="2441660594466965972" at="57,26,58,18" concept="7" />
       <node id="2441660594466965972" at="61,39,62,32" concept="7" />
@@ -306,7 +306,7 @@
       <node id="2441660594466965972" at="147,28,148,25" concept="2" />
       <node id="2441660594466965972" at="152,28,153,20" concept="7" />
       <node id="2441660594466965972" at="155,40,156,33" concept="7" />
-      <node id="2441660594466965972" at="158,48,159,34" concept="7" />
+      <node id="2441660594466965972" at="158,48,159,30" concept="7" />
       <node id="2441660594466976168" at="162,69,163,82" concept="7" />
       <node id="2441660594466965972" at="165,57,166,83" concept="6" />
       <node id="2441660594466965972" at="166,83,167,65" concept="2" />
@@ -356,7 +356,7 @@
       <node id="2441660594466967259" at="246,36,247,24" concept="7" />
       <node id="2441660594466965972" at="252,0,253,0" concept="9" trace="separator$G135" />
       <node id="2441660594466965972" at="256,0,257,0" concept="9" trace="PropertyAttribute$Gb" />
-      <node id="2441660594466965972" at="257,0,258,0" concept="9" trace="QuizUser$Ox" />
+      <node id="2441660594466965972" at="257,0,258,0" concept="9" trace="User$Ox" />
       <node id="2441660594466965972" at="261,0,262,0" concept="9" trace="QuizUser$T4Qd" />
       <node id="2441660594466965972" at="47,0,49,0" concept="3" trace="myNode" />
       <node id="2441660594466965972" at="143,0,145,0" concept="3" trace="myNode" />
@@ -366,8 +366,8 @@
       <node id="2441660594466965972" at="158,0,161,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2441660594466965972" at="162,0,165,0" concept="5" trace="getSeparatorText#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="2441660594466965972" at="205,96,208,9" concept="4" />
-      <node id="2441660594466965972" at="50,0,54,0" concept="1" trace="QuizUsers_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="2441660594466965972" at="146,0,150,0" concept="1" trace="QuizUserListHandler_d1onrw_a1a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2441660594466965972" at="50,0,54,0" concept="1" trace="UsersBlock_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2441660594466965972" at="146,0,150,0" concept="1" trace="QuizUserListHandler_v68tkz_a1a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2441660594466965972" at="151,0,155,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2441660594466965972" at="187,97,191,9" concept="4" />
       <node id="2441660594466965972" at="193,95,197,9" concept="4" />
@@ -403,11 +403,11 @@
       <scope id="2441660594466969131" at="119,15,120,40" />
       <scope id="2441660594466965972" at="152,28,153,20" />
       <scope id="2441660594466965972" at="155,40,156,33" />
-      <scope id="2441660594466965972" at="158,48,159,34" />
+      <scope id="2441660594466965972" at="158,48,159,30" />
       <scope id="2441660594466972038" at="162,69,163,82" />
       <scope id="2441660594466965972" at="179,17,180,42" />
       <scope id="2441660594466965972" at="206,34,207,91" />
-      <scope id="2441660594466965972" at="50,89,52,18" />
+      <scope id="2441660594466965972" at="50,90,52,18" />
       <scope id="2441660594466969131" at="114,74,116,145">
         <var name="manager" id="2441660594466969131" />
       </scope>
@@ -518,16 +518,16 @@
       </scope>
       <scope id="2441660594466969131" at="95,41,121,5" />
       <scope id="2441660594466969131" at="95,0,123,0" />
-      <unit id="2441660594466965972" at="251,0,254,0" name="MoodleTests.editor.QuizUsers_EditorBuilder_a$PROPS" />
-      <unit id="2441660594466965972" at="260,0,263,0" name="MoodleTests.editor.QuizUsers_EditorBuilder_a$LINKS" />
-      <unit id="2441660594466969131" at="109,102,113,7" name="MoodleTests.editor.QuizUsers_EditorBuilder_a$1" />
-      <unit id="2441660594466965972" at="255,0,259,0" name="MoodleTests.editor.QuizUsers_EditorBuilder_a$CONCEPTS" />
-      <unit id="2441660594466965972" at="142,0,250,0" name="MoodleTests.editor.QuizUsers_EditorBuilder_a$QuizUserListHandler_d1onrw_a1a" />
-      <unit id="2441660594466965972" at="46,0,264,0" name="MoodleTests.editor.QuizUsers_EditorBuilder_a" />
+      <unit id="2441660594466965972" at="251,0,254,0" name="MoodleTests.editor.UsersBlock_EditorBuilder_a$PROPS" />
+      <unit id="2441660594466965972" at="260,0,263,0" name="MoodleTests.editor.UsersBlock_EditorBuilder_a$LINKS" />
+      <unit id="2441660594466969131" at="109,102,113,7" name="MoodleTests.editor.UsersBlock_EditorBuilder_a$1" />
+      <unit id="2441660594466965972" at="255,0,259,0" name="MoodleTests.editor.UsersBlock_EditorBuilder_a$CONCEPTS" />
+      <unit id="2441660594466965972" at="142,0,250,0" name="MoodleTests.editor.UsersBlock_EditorBuilder_a$QuizUserListHandler_v68tkz_a1a" />
+      <unit id="2441660594466965972" at="46,0,264,0" name="MoodleTests.editor.UsersBlock_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:1093a065-2257-4f5b-9469-f45c45d6bdc5(MoodleTests.editor)/2463884494659064823">
-    <file name="MoodleTests_Editor.java">
+    <file name="QuizesBlock_Editor.java">
       <node id="2463884494659064823" at="11,79,12,77" concept="7" />
       <node id="2463884494659064823" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="2463884494659064823" at="11,79,12,77" />
@@ -535,9 +535,9 @@
         <var name="editorContext" id="2463884494659064823" />
         <var name="node" id="2463884494659064823" />
       </scope>
-      <unit id="2463884494659064823" at="10,0,15,0" name="MoodleTests.editor.MoodleTests_Editor" />
+      <unit id="2463884494659064823" at="10,0,15,0" name="MoodleTests.editor.QuizesBlock_Editor" />
     </file>
-    <file name="MoodleTests_EditorBuilder_a.java">
+    <file name="QuizesBlock_EditorBuilder_a.java">
       <node id="2463884494659064823" at="30,91,31,19" concept="10" />
       <node id="2463884494659064823" at="31,19,32,18" concept="2" />
       <node id="2463884494659064823" at="37,26,38,18" concept="7" />
@@ -562,7 +562,7 @@
       <node id="2463884494659064823" at="72,28,73,25" concept="2" />
       <node id="2463884494659064823" at="77,28,78,20" concept="7" />
       <node id="2463884494659064823" at="80,40,81,32" concept="7" />
-      <node id="2463884494659064823" at="83,48,84,36" concept="7" />
+      <node id="2463884494659064823" at="83,48,84,30" concept="7" />
       <node id="2463884494659064823" at="87,57,88,83" concept="6" />
       <node id="2463884494659064823" at="88,83,89,65" concept="2" />
       <node id="2463884494659064823" at="89,65,90,25" concept="7" />
@@ -583,15 +583,15 @@
       <node id="2463884494659064823" at="123,69,124,146" concept="2" />
       <node id="2463884494659064823" at="128,34,129,91" concept="2" />
       <node id="2463884494659064823" at="136,0,137,0" concept="9" trace="Content$k75u" />
-      <node id="2463884494659064823" at="140,0,141,0" concept="9" trace="MoodleTest$n8" />
+      <node id="2463884494659064823" at="140,0,141,0" concept="9" trace="Quiz$n8" />
       <node id="2463884494659064823" at="27,0,29,0" concept="3" trace="myNode" />
       <node id="2463884494659064823" at="68,0,70,0" concept="3" trace="myNode" />
       <node id="2463884494659064823" at="41,0,44,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2463884494659064823" at="80,0,83,0" concept="5" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="2463884494659064823" at="83,0,86,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2463884494659064823" at="127,96,130,9" concept="4" />
-      <node id="2463884494659064823" at="30,0,34,0" concept="1" trace="MoodleTests_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="2463884494659064823" at="71,0,75,0" concept="1" trace="ContentListHandler_csz6zx_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2463884494659064823" at="30,0,34,0" concept="1" trace="QuizesBlock_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2463884494659064823" at="71,0,75,0" concept="1" trace="ContentListHandler_8rb1j5_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2463884494659064823" at="76,0,80,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2463884494659064823" at="109,97,113,9" concept="4" />
       <node id="2463884494659064823" at="115,95,119,9" concept="4" />
@@ -612,7 +612,7 @@
       <scope id="2463884494659064823" at="41,39,42,32" />
       <scope id="2463884494659064823" at="77,28,78,20" />
       <scope id="2463884494659064823" at="80,40,81,32" />
-      <scope id="2463884494659064823" at="83,48,84,36" />
+      <scope id="2463884494659064823" at="83,48,84,30" />
       <scope id="2463884494659064823" at="101,17,102,42" />
       <scope id="2463884494659064823" at="128,34,129,91" />
       <scope id="2463884494659064823" at="30,91,32,18" />
@@ -667,25 +667,25 @@
         <var name="elementNode" id="2463884494659064823" />
         <var name="isEmptyCell" id="2463884494659064823" />
       </scope>
-      <unit id="2463884494659064823" at="135,0,138,0" name="MoodleTests.editor.MoodleTests_EditorBuilder_a$LINKS" />
-      <unit id="2463884494659064823" at="139,0,142,0" name="MoodleTests.editor.MoodleTests_EditorBuilder_a$CONCEPTS" />
-      <unit id="2463884494659064823" at="67,0,134,0" name="MoodleTests.editor.MoodleTests_EditorBuilder_a$ContentListHandler_csz6zx_b0" />
-      <unit id="2463884494659064823" at="26,0,143,0" name="MoodleTests.editor.MoodleTests_EditorBuilder_a" />
+      <unit id="2463884494659064823" at="135,0,138,0" name="MoodleTests.editor.QuizesBlock_EditorBuilder_a$LINKS" />
+      <unit id="2463884494659064823" at="139,0,142,0" name="MoodleTests.editor.QuizesBlock_EditorBuilder_a$CONCEPTS" />
+      <unit id="2463884494659064823" at="67,0,134,0" name="MoodleTests.editor.QuizesBlock_EditorBuilder_a$ContentListHandler_8rb1j5_b0" />
+      <unit id="2463884494659064823" at="26,0,143,0" name="MoodleTests.editor.QuizesBlock_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:1093a065-2257-4f5b-9469-f45c45d6bdc5(MoodleTests.editor)/2463884494659222520">
-    <file name="MoodleTest_Editor.java">
-      <node id="2463884494659222520" at="11,79,12,76" concept="7" />
+    <file name="Quiz_Editor.java">
+      <node id="2463884494659222520" at="11,79,12,70" concept="7" />
       <node id="2463884494659222520" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2463884494659222520" at="11,79,12,76" />
+      <scope id="2463884494659222520" at="11,79,12,70" />
       <scope id="2463884494659222520" at="11,0,14,0">
         <var name="editorContext" id="2463884494659222520" />
         <var name="node" id="2463884494659222520" />
       </scope>
-      <unit id="2463884494659222520" at="10,0,15,0" name="MoodleTests.editor.MoodleTest_Editor" />
+      <unit id="2463884494659222520" at="10,0,15,0" name="MoodleTests.editor.Quiz_Editor" />
     </file>
-    <file name="MoodleTest_EditorBuilder_a.java">
-      <node id="2463884494659222520" at="49,90,50,19" concept="10" />
+    <file name="Quiz_EditorBuilder_a.java">
+      <node id="2463884494659222520" at="49,84,50,19" concept="10" />
       <node id="2463884494659222520" at="50,19,51,18" concept="2" />
       <node id="2463884494659222520" at="56,26,57,18" concept="7" />
       <node id="2463884494659222520" at="60,39,61,32" concept="7" />
@@ -863,13 +863,13 @@
       <node id="2463884494659222520" at="332,87,335,7" concept="4" />
       <node id="2463884494659222520" at="335,7,338,7" concept="4" />
       <node id="2463884494659222520" at="354,0,357,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="2463884494659222520" at="49,0,53,0" concept="1" trace="MoodleTest_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2463884494659222520" at="49,0,53,0" concept="1" trace="Quiz_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2463884494659222520" at="193,0,197,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2463884494659222520" at="201,0,205,0" concept="1" trace="ExercisesSingleRoleHandler_xbdhf9_e0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2463884494659222520" at="201,0,205,0" concept="1" trace="ExercisesSingleRoleHandler_6onex7_e0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2463884494659222520" at="248,0,252,0" concept="5" trace="createRefNode_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2463884494659222520" at="256,0,260,0" concept="1" trace="QuizUsersSingleRoleHandler_xbdhf9_f0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2463884494659222520" at="256,0,260,0" concept="1" trace="QuizUsersSingleRoleHandler_6onex7_f0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2463884494659222520" at="303,0,307,0" concept="5" trace="createRefNode_2#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2463884494659222520" at="311,0,315,0" concept="1" trace="SettingsSingleRoleHandler_xbdhf9_g0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2463884494659222520" at="311,0,315,0" concept="1" trace="SettingsSingleRoleHandler_6onex7_g0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2463884494659222520" at="54,0,59,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8902074227498879277" at="121,155,126,9" concept="6" />
       <node id="8902074227498879277" at="126,9,131,24" concept="4" />
@@ -924,7 +924,7 @@
       <scope id="2463884494659222520" at="336,42,337,49" />
       <scope id="2463884494659222520" at="350,17,351,42" />
       <scope id="2463884494659222520" at="354,40,355,29" />
-      <scope id="2463884494659222520" at="49,90,51,18" />
+      <scope id="2463884494659222520" at="49,84,51,18" />
       <scope id="8902074227498879277" at="127,74,129,145">
         <var name="manager" id="8902074227498879277" />
       </scope>
@@ -1086,30 +1086,30 @@
       <scope id="8902074227499242006" at="159,41,185,5" />
       <scope id="8902074227498879277" at="108,0,136,0" />
       <scope id="8902074227499242006" at="159,0,187,0" />
-      <unit id="2463884494659222520" at="364,0,367,0" name="MoodleTests.editor.MoodleTest_EditorBuilder_a$CONCEPTS" />
-      <unit id="8902074227498879277" at="122,102,126,7" name="MoodleTests.editor.MoodleTest_EditorBuilder_a$1" />
-      <unit id="8902074227499242006" at="173,102,177,7" name="MoodleTests.editor.MoodleTest_EditorBuilder_a$2" />
-      <unit id="2463884494659222520" at="359,0,363,0" name="MoodleTests.editor.MoodleTest_EditorBuilder_a$PROPS" />
-      <unit id="2463884494659222520" at="368,0,373,0" name="MoodleTests.editor.MoodleTest_EditorBuilder_a$LINKS" />
-      <unit id="2463884494659222520" at="197,0,248,0" name="MoodleTests.editor.MoodleTest_EditorBuilder_a$ExercisesSingleRoleHandler_xbdhf9_e0" />
-      <unit id="2463884494659222520" at="252,0,303,0" name="MoodleTests.editor.MoodleTest_EditorBuilder_a$QuizUsersSingleRoleHandler_xbdhf9_f0" />
-      <unit id="2463884494659222520" at="307,0,358,0" name="MoodleTests.editor.MoodleTest_EditorBuilder_a$SettingsSingleRoleHandler_xbdhf9_g0" />
-      <unit id="2463884494659222520" at="45,0,374,0" name="MoodleTests.editor.MoodleTest_EditorBuilder_a" />
+      <unit id="2463884494659222520" at="364,0,367,0" name="MoodleTests.editor.Quiz_EditorBuilder_a$CONCEPTS" />
+      <unit id="8902074227498879277" at="122,102,126,7" name="MoodleTests.editor.Quiz_EditorBuilder_a$1" />
+      <unit id="8902074227499242006" at="173,102,177,7" name="MoodleTests.editor.Quiz_EditorBuilder_a$2" />
+      <unit id="2463884494659222520" at="359,0,363,0" name="MoodleTests.editor.Quiz_EditorBuilder_a$PROPS" />
+      <unit id="2463884494659222520" at="368,0,373,0" name="MoodleTests.editor.Quiz_EditorBuilder_a$LINKS" />
+      <unit id="2463884494659222520" at="197,0,248,0" name="MoodleTests.editor.Quiz_EditorBuilder_a$ExercisesSingleRoleHandler_6onex7_e0" />
+      <unit id="2463884494659222520" at="252,0,303,0" name="MoodleTests.editor.Quiz_EditorBuilder_a$QuizUsersSingleRoleHandler_6onex7_f0" />
+      <unit id="2463884494659222520" at="307,0,358,0" name="MoodleTests.editor.Quiz_EditorBuilder_a$SettingsSingleRoleHandler_6onex7_g0" />
+      <unit id="2463884494659222520" at="45,0,374,0" name="MoodleTests.editor.Quiz_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:1093a065-2257-4f5b-9469-f45c45d6bdc5(MoodleTests.editor)/2463884494659472151">
-    <file name="Exercises_Editor.java">
-      <node id="2463884494659472151" at="11,79,12,75" concept="7" />
+    <file name="ExercisesBlock_Editor.java">
+      <node id="2463884494659472151" at="11,79,12,80" concept="7" />
       <node id="2463884494659472151" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2463884494659472151" at="11,79,12,75" />
+      <scope id="2463884494659472151" at="11,79,12,80" />
       <scope id="2463884494659472151" at="11,0,14,0">
         <var name="editorContext" id="2463884494659472151" />
         <var name="node" id="2463884494659472151" />
       </scope>
-      <unit id="2463884494659472151" at="10,0,15,0" name="MoodleTests.editor.Exercises_Editor" />
+      <unit id="2463884494659472151" at="10,0,15,0" name="MoodleTests.editor.ExercisesBlock_Editor" />
     </file>
-    <file name="Exercises_EditorBuilder_a.java">
-      <node id="2463884494659472151" at="36,89,37,19" concept="10" />
+    <file name="ExercisesBlock_EditorBuilder_a.java">
+      <node id="2463884494659472151" at="36,94,37,19" concept="10" />
       <node id="2463884494659472151" at="37,19,38,18" concept="2" />
       <node id="2463884494659472151" at="43,26,44,18" concept="7" />
       <node id="2463884494659472151" at="47,39,48,32" concept="7" />
@@ -1239,13 +1239,13 @@
       <node id="2463884494659472151" at="190,0,193,0" concept="5" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="2463884494659472151" at="193,0,196,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2463884494659472151" at="237,96,240,9" concept="4" />
-      <node id="2463884494659472151" at="36,0,40,0" concept="1" trace="Exercises_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="2463884494659472151" at="78,0,82,0" concept="1" trace="ContentWithSubnameListHandler_am9kyw_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2463884494659472151" at="36,0,40,0" concept="1" trace="ExercisesBlock_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2463884494659472151" at="78,0,82,0" concept="1" trace="ContentWithSubnameListHandler_kaozt9_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2463884494659472151" at="83,0,87,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2463884494659472151" at="116,97,120,9" concept="4" />
       <node id="2463884494659472151" at="122,95,126,9" concept="4" />
       <node id="2463884494659472151" at="128,74,132,9" concept="4" />
-      <node id="2463884494659472151" at="181,0,185,0" concept="1" trace="ContentWithTagListHandler_am9kyw_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2463884494659472151" at="181,0,185,0" concept="1" trace="ContentWithTagListHandler_kaozt9_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2463884494659472151" at="186,0,190,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2463884494659472151" at="219,97,223,9" concept="4" />
       <node id="2463884494659472151" at="225,95,229,9" concept="4" />
@@ -1291,7 +1291,7 @@
       <scope id="2463884494659472151" at="193,48,194,41" />
       <scope id="2463884494659472151" at="211,17,212,42" />
       <scope id="2463884494659472151" at="238,34,239,91" />
-      <scope id="2463884494659472151" at="36,89,38,18" />
+      <scope id="2463884494659472151" at="36,94,38,18" />
       <scope id="2463884494659472151" at="78,92,80,25" />
       <scope id="2463884494659472151" at="117,122,119,146" />
       <scope id="2463884494659472151" at="123,34,125,142" />
@@ -1414,11 +1414,11 @@
         <var name="elementNode" id="2463884494659472151" />
         <var name="isEmptyCell" id="2463884494659472151" />
       </scope>
-      <unit id="2463884494659472151" at="274,0,278,0" name="MoodleTests.editor.Exercises_EditorBuilder_a$LINKS" />
-      <unit id="2463884494659472151" at="279,0,283,0" name="MoodleTests.editor.Exercises_EditorBuilder_a$CONCEPTS" />
-      <unit id="2463884494659472151" at="74,0,170,0" name="MoodleTests.editor.Exercises_EditorBuilder_a$ContentWithSubnameListHandler_am9kyw_b0" />
-      <unit id="2463884494659472151" at="177,0,273,0" name="MoodleTests.editor.Exercises_EditorBuilder_a$ContentWithTagListHandler_am9kyw_c0" />
-      <unit id="2463884494659472151" at="32,0,284,0" name="MoodleTests.editor.Exercises_EditorBuilder_a" />
+      <unit id="2463884494659472151" at="274,0,278,0" name="MoodleTests.editor.ExercisesBlock_EditorBuilder_a$LINKS" />
+      <unit id="2463884494659472151" at="279,0,283,0" name="MoodleTests.editor.ExercisesBlock_EditorBuilder_a$CONCEPTS" />
+      <unit id="2463884494659472151" at="74,0,170,0" name="MoodleTests.editor.ExercisesBlock_EditorBuilder_a$ContentWithSubnameListHandler_kaozt9_b0" />
+      <unit id="2463884494659472151" at="177,0,273,0" name="MoodleTests.editor.ExercisesBlock_EditorBuilder_a$ContentWithTagListHandler_kaozt9_c0" />
+      <unit id="2463884494659472151" at="32,0,284,0" name="MoodleTests.editor.ExercisesBlock_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:1093a065-2257-4f5b-9469-f45c45d6bdc5(MoodleTests.editor)/2463884494659539841">
@@ -1502,7 +1502,7 @@
       <node id="8902074227499199502" at="146,95,147,47" concept="2" />
       <node id="8902074227499199502" at="147,47,148,34" concept="2" />
       <node id="8902074227499199502" at="148,34,149,22" concept="7" />
-      <node id="2463884494659539841" at="153,0,154,0" concept="9" trace="count$g7Tm" />
+      <node id="2463884494659539841" at="153,0,154,0" concept="9" trace="count$W84w" />
       <node id="2463884494659539841" at="154,0,155,0" concept="9" trace="subname$_8fE" />
       <node id="2463884494659539841" at="158,0,159,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2463884494659539841" at="36,0,38,0" concept="3" trace="myNode" />
@@ -1676,7 +1676,7 @@
       <node id="8902074227499113571" at="146,95,147,47" concept="2" />
       <node id="8902074227499113571" at="147,47,148,34" concept="2" />
       <node id="8902074227499113571" at="148,34,149,22" concept="7" />
-      <node id="2463884494659542125" at="153,0,154,0" concept="9" trace="count$8IhV" />
+      <node id="2463884494659542125" at="153,0,154,0" concept="9" trace="count$W84w" />
       <node id="2463884494659542125" at="154,0,155,0" concept="9" trace="tag$jaWt" />
       <node id="2463884494659542125" at="158,0,159,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2463884494659542125" at="36,0,38,0" concept="3" trace="myNode" />
@@ -1770,18 +1770,18 @@
     </file>
   </root>
   <root nodeRef="r:1093a065-2257-4f5b-9469-f45c45d6bdc5(MoodleTests.editor)/8902074227498966952">
-    <file name="Settings_Editor.java">
-      <node id="8902074227498966952" at="11,79,12,74" concept="7" />
+    <file name="SettingsBlock_Editor.java">
+      <node id="8902074227498966952" at="11,79,12,79" concept="7" />
       <node id="8902074227498966952" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8902074227498966952" at="11,79,12,74" />
+      <scope id="8902074227498966952" at="11,79,12,79" />
       <scope id="8902074227498966952" at="11,0,14,0">
         <var name="editorContext" id="8902074227498966952" />
         <var name="node" id="8902074227498966952" />
       </scope>
-      <unit id="8902074227498966952" at="10,0,15,0" name="MoodleTests.editor.Settings_Editor" />
+      <unit id="8902074227498966952" at="10,0,15,0" name="MoodleTests.editor.SettingsBlock_Editor" />
     </file>
-    <file name="Settings_EditorBuilder_a.java">
-      <node id="8902074227498966952" at="47,88,48,19" concept="10" />
+    <file name="SettingsBlock_EditorBuilder_a.java">
+      <node id="8902074227498966952" at="47,93,48,19" concept="10" />
       <node id="8902074227498966952" at="48,19,49,18" concept="2" />
       <node id="8902074227498966952" at="54,26,55,18" concept="7" />
       <node id="8902074227498966952" at="58,39,59,32" concept="7" />
@@ -1934,9 +1934,9 @@
       <node id="8902074227498966952" at="58,0,61,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="150968299173797216" at="117,0,120,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="150968299173763066" at="179,0,182,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="150968299173838633" at="225,0,228,0" concept="5" trace="nodeCondition_9rribo_a2d0#()Z" />
+      <node id="150968299173838633" at="225,0,228,0" concept="5" trace="nodeCondition_lawf5d_a2d0#()Z" />
       <node id="150968299173838664" at="261,0,264,0" concept="5" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
-      <node id="8902074227498966952" at="47,0,51,0" concept="1" trace="Settings_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8902074227498966952" at="47,0,51,0" concept="1" trace="SettingsBlock_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8902074227498966952" at="52,0,57,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="150968299173797216" at="115,155,120,9" concept="6" />
       <node id="150968299173797216" at="120,9,125,24" concept="4" />
@@ -1961,7 +1961,7 @@
       <node id="150968299173838641" at="228,0,237,0" concept="5" trace="createConstant_9#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="150968299173838643" at="237,0,246,0" concept="5" trace="createConstant_10#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8902074227498966952" at="192,0,202,0" concept="5" trace="createCollection_3#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="150968299173838647" at="257,0,267,0" concept="5" trace="_QueryFunction_JComponent_9rribo_a4d0#()Ljavax/swing/JComponent;" />
+      <node id="150968299173838647" at="257,0,267,0" concept="5" trace="_QueryFunction_JComponent_lawf5d_a4d0#()Ljavax/swing/JComponent;" />
       <node id="8902074227498966952" at="214,0,225,0" concept="5" trace="createAlternation_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8902074227498966952" at="62,0,74,0" concept="5" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="150968299173797216" at="102,39,128,5" concept="11" />
@@ -1978,7 +1978,7 @@
       <scope id="8902074227498966952" at="220,12,221,39" />
       <scope id="150968299173838634" at="225,47,226,78" />
       <scope id="150968299173838669" at="261,51,262,171" />
-      <scope id="8902074227498966952" at="47,88,49,18" />
+      <scope id="8902074227498966952" at="47,93,49,18" />
       <scope id="150968299173797216" at="121,74,123,145">
         <var name="manager" id="150968299173797216" />
       </scope>
@@ -2102,12 +2102,12 @@
       <scope id="150968299173763066" at="163,41,190,5" />
       <scope id="150968299173797216" at="101,0,130,0" />
       <scope id="150968299173763066" at="163,0,192,0" />
-      <unit id="8902074227498966952" at="280,0,283,0" name="MoodleTests.editor.Settings_EditorBuilder_a$CONCEPTS" />
-      <unit id="150968299173797216" at="116,102,120,7" name="MoodleTests.editor.Settings_EditorBuilder_a$1" />
-      <unit id="150968299173763066" at="178,102,182,7" name="MoodleTests.editor.Settings_EditorBuilder_a$2" />
-      <unit id="150968299173838662" at="260,30,264,5" name="MoodleTests.editor.Settings_EditorBuilder_a$3" />
-      <unit id="8902074227498966952" at="274,0,279,0" name="MoodleTests.editor.Settings_EditorBuilder_a$PROPS" />
-      <unit id="8902074227498966952" at="43,0,284,0" name="MoodleTests.editor.Settings_EditorBuilder_a" />
+      <unit id="8902074227498966952" at="280,0,283,0" name="MoodleTests.editor.SettingsBlock_EditorBuilder_a$CONCEPTS" />
+      <unit id="150968299173797216" at="116,102,120,7" name="MoodleTests.editor.SettingsBlock_EditorBuilder_a$1" />
+      <unit id="150968299173763066" at="178,102,182,7" name="MoodleTests.editor.SettingsBlock_EditorBuilder_a$2" />
+      <unit id="150968299173838662" at="260,30,264,5" name="MoodleTests.editor.SettingsBlock_EditorBuilder_a$3" />
+      <unit id="8902074227498966952" at="274,0,279,0" name="MoodleTests.editor.SettingsBlock_EditorBuilder_a$PROPS" />
+      <unit id="8902074227498966952" at="43,0,284,0" name="MoodleTests.editor.SettingsBlock_EditorBuilder_a" />
     </file>
   </root>
 </debug-info>

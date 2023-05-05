@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class MoodleTests_Editor extends DefaultNodeEditor {
+public class SettingsBlock_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new MoodleTests_EditorBuilder_a(editorContext, node).createCell();
+    return new SettingsBlock_EditorBuilder_a(editorContext, node).createCell();
   }
 }

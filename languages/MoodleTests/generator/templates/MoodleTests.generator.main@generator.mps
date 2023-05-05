@@ -177,7 +177,7 @@
     </node>
   </node>
   <node concept="2pMbU2" id="6YhVlAgTSSo">
-    <property role="TrG5h" value="map_MoodleTests" />
+    <property role="TrG5h" value="map_QuizesBlock" />
     <node concept="3rIKKV" id="6YhVlAgTSSp" role="2pMbU3">
       <node concept="2pNNFK" id="6YhVlAgTSWM" role="2pNm8H">
         <property role="2pNNFO" value="moodleTests" />
@@ -322,7 +322,7 @@
                   <node concept="2OqwBi" id="7IaxlwYl4PN" role="3clFbG">
                     <node concept="30H73N" id="7IaxlwYl4AH" role="2Oq$k0" />
                     <node concept="3TrcHB" id="7IaxlwYl55X" role="2OqNvi">
-                      <ref role="3TsBF5" to="74e2:28Luuj7Lgen" resolve="count" />
+                      <ref role="3TsBF5" to="74e2:5JFnmYV2Lrz" resolve="count" />
                     </node>
                   </node>
                 </node>
@@ -373,7 +373,7 @@
                   <node concept="2OqwBi" id="7IaxlwYl6$S" role="3clFbG">
                     <node concept="30H73N" id="7IaxlwYl6lM" role="2Oq$k0" />
                     <node concept="3TrcHB" id="7IaxlwYl6PZ" role="2OqNvi">
-                      <ref role="3TsBF5" to="74e2:28Luuj7Lf$O" resolve="count" />
+                      <ref role="3TsBF5" to="74e2:5JFnmYV2Lrz" resolve="count" />
                     </node>
                   </node>
                 </node>
@@ -407,7 +407,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="3FqswQochUt">
-    <property role="TrG5h" value="reduce_Exercises" />
+    <property role="TrG5h" value="reduce_ExercisesBlock" />
     <ref role="3gUMe" to="74e2:5GF9IbDtLzh" resolve="Exercises" />
     <node concept="2pNNFK" id="3FqswQocqdV" role="13RCb5">
       <property role="2pNNFO" value="exercises" />
@@ -448,7 +448,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="i7SkaUBIci">
-    <property role="TrG5h" value="reduce_Settings" />
+    <property role="TrG5h" value="reduce_SettingsBlock" />
     <ref role="3gUMe" to="74e2:7IaxlwYeVzu" resolve="Settings" />
     <node concept="2pNNFK" id="i7SkaUBIgF" role="13RCb5">
       <property role="2pNNFO" value="settings" />
@@ -584,7 +584,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="27yxlZbhhrL">
-    <property role="TrG5h" value="reduce_QuizUser" />
+    <property role="TrG5h" value="reduce_User" />
     <ref role="3gUMe" to="74e2:27yxlZbg3QV" resolve="QuizUserTemp" />
     <node concept="2pNNFK" id="27yxlZbhhrN" role="13RCb5">
       <property role="2pNNFO" value="quizUser" />
@@ -617,6 +617,7 @@
           </node>
         </node>
       </node>
+      <node concept="3o6iSG" id="5JFnmYV2Hxg" role="3o6s8t" />
       <node concept="3o6iSG" id="27yxlZbhhs5" role="3o6s8t">
         <node concept="17Uvod" id="27yxlZbhoXR" role="lGtFl">
           <property role="2qtEX9" value="value" />

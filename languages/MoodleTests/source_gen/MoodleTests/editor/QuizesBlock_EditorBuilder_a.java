@@ -23,11 +23,11 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class MoodleTests_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class QuizesBlock_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public MoodleTests_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public QuizesBlock_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -44,7 +44,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
-    editorCell.setCellId("Collection_csz6zx_a");
+    editorCell.setCellId("Collection_8rb1j5_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
@@ -53,22 +53,22 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Create new quizes");
-    editorCell.setCellId("Constant_csz6zx_a0");
+    editorCell.setCellId("Constant_8rb1j5_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new ContentListHandler_csz6zx_b0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new ContentListHandler_8rb1j5_b0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_Content");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class ContentListHandler_csz6zx_b0 extends RefNodeListHandler {
+  private static class ContentListHandler_8rb1j5_b0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public ContentListHandler_csz6zx_b0(SNode ownerNode, EditorContext context) {
+    public ContentListHandler_8rb1j5_b0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -81,7 +81,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return LINKS.Content$k75u;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.MoodleTest$n8;
+      return CONCEPTS.Quiz$n8;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -91,7 +91,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(ContentListHandler_csz6zx_b0.this.getNode(), LINKS.Content$k75u));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(ContentListHandler_8rb1j5_b0.this.getNode(), LINKS.Content$k75u));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -137,6 +137,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept MoodleTest$n8 = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97557e4L, "MoodleTests.structure.MoodleTest");
+    /*package*/ static final SConcept Quiz$n8 = MetaAdapterFactory.getConcept(0x54f7c48843b442ecL, 0xa6a7b6ba91a8bda2L, 0x5b2b26e2e97557e4L, "MoodleTests.structure.Quiz");
   }
 }
